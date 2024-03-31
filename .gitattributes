@@ -1,0 +1,5 @@
+*.unity filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
+ArtifactDB filter=lfs diff=lfs merge=lfs -text
+Hard_Surface_01_Metal.tif filter=lfs diff=lfs merge=lfs -text
+1fde498999eefba74bde27d1188a1333 filter=lfs diff=lfs merge=lfs -text
