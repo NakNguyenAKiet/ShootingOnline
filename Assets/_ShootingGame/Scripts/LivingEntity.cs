@@ -12,7 +12,8 @@ namespace ShootingGame
         [SerializeField] private Slider healthBar;
         private void Reset()
         {
-            animator = GetComponent<Animator>();   
+            animator = GetComponent<Animator>();
+            healthBar.value = HP;
         }
         public void TakeDame(int dame)
         {
@@ -27,6 +28,16 @@ namespace ShootingGame
         {
             animator.SetTrigger("isDying");
             transform.GetComponent<Collider>().enabled = false;
+
+            Invoke(nameof(DestroyThis), 4);
+        }
+        private void DestroyThis() 
+        {
+            Destroy(gameObject);
+        }
+        public void SetHealthBar(Slider slider)
+        {
+            healthBar = slider;
         }
     }
 }

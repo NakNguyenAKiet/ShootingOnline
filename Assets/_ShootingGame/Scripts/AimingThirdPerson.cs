@@ -5,6 +5,7 @@ using System.Security.Claims;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 using UnityEngine.InputSystem;
+using UnityEngine.VFX;
 
 namespace ShootingGame
 {
@@ -21,9 +22,9 @@ namespace ShootingGame
         [SerializeField] private LayerMask _aimLayerMask;
         [SerializeField] private PlayerInput _playerInput;
         [SerializeField] private Transform targetTransform;
-        [SerializeField] private GameObject _projectilePrefab;
         [SerializeField] private Transform _bulletSpawner;
-        [SerializeField] private Transform HitVFX;
+        [SerializeField] private VisualEffect HitVFX;
+        [SerializeField] private VisualEffect FlameVFX;
         [SerializeField] private PoolsHelper _bulletPool;
 
         private Vector3 _mouseWorldPos = Vector3.zero;
@@ -78,7 +79,9 @@ namespace ShootingGame
                 _bulletDir = (_mouseWorldPos - _bulletSpawner.position).normalized;
                 _bulletPool.SpawnObjectByDirection(_bulletSpawner, Quaternion.LookRotation(_bulletDir));
                 //Instantiate(_projectilePrefab, _bulletSpawner.position, Quaternion.LookRotation(_bulletDir, Vector3.up));
-                Instantiate(HitVFX, _mouseWorldPos, Quaternion.identity);
+                HitVFX.transform.position = _mouseWorldPos;
+                HitVFX.Play();
+                FlameVFX.Play();
                 _starterAssetsInputs.shoot = false;
             }
 

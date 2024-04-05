@@ -8,10 +8,15 @@ namespace ShootingGame
     public class EnemyFiringRifleState : StateMachineBehaviour
     {
         public Transform player;
+        public float ShootingDelay = 1f;
+        public float TimeShootingDelay = 1f;
+        public EnemyShootingController EnemyShootingController;
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            player = GameObject.FindGameObjectWithTag("Player").transform;
+            ShootingDelay = 0;
+            player = GameObject.FindGameObjectWithTag("PlayerTarget").transform;
+            EnemyShootingController = animator.GetComponent<EnemyShootingController>();
         }
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
@@ -21,6 +26,16 @@ namespace ShootingGame
             if (distanceToPlayer > 10)
             {
                 animator.SetBool("isAttacking", false);
+            }
+
+            ShootingDelay += Time.deltaTime;
+            if (ShootingDelay >= TimeShootingDelay) 
+            {
+                animator.SetTrigger("Shoot");
+                ShootingDelay = 0;
+                Vector3 _bulletDir = (player.position - EnemyShootingController.ProjectileSpawner.position).normalized;
+                EnemyShootingController.BulletPool.SpawnObjectByDirection(EnemyShootingController.ProjectileSpawner, Quaternion.LookRotation(_bulletDir));
+                EnemyShootingController.FireVFX.Play();
             }
         }
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

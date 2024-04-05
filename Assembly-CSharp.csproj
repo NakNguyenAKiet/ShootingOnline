@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9EC3F800-0F32-E94F-D2CE-6591D95796AC}</ProjectGuid>
+    <ProjectGuid>{3B20415C-35BF-E337-2611-B99FAFC71DE9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,29 +56,126 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
-    <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\ShootingController.cs" />
-    <Compile Include="Assets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\StartWindowController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyFiringRifleState.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\ScreenControllerInterfaces.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\LivingEntity.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenTransitions\SlideScreenTransition.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenIds.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\PlayerWindowController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowPriority.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\RootScene\RootModenScene.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\SimpleFadeTransition.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\UIController\ScreenIds.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Extras\FakePlayerData.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowParaLayer.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\AutoMove.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\UIDemoController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelUILayer.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowProperties.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\EmptyWindowController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\NavigationPanelButton.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\LegacyAnimationScreenTransition.cs" />
+    <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
+    <Compile Include="Assets\Barking_Dog\Common Scripts\Turn_Move.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\UIFrame.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelPriority.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\UIFrameManager.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\ATransitionComponent.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\ToastPanelController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyIdle.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\BaseSingleton.cs" />
+    <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
+    <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\ScreenPropertyInterfaces.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\AUILayer.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\LookAtPlayer.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\NavigationPanelController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\External\Signals.cs" />
+    <Compile Include="Assets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Projectile.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenTransitions\ScaleScreenTransition.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\CameraProjectionWindowController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\UISettings.cs" />
+    <Compile Include="Assets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\AUIScreenController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyPatrollingState.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\AWindowController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\EnemyShootingController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\APanelController.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Helpers\PoolsHelper.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\AimingThirdPerson.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\ConfirmationPopupController.cs" />
     <Compile Include="Assets\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelProperties.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\PopupExampleWindowController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\LevelProgressComponent.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowHistoryEntry.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\UIFollowComponent.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowUILayer.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Helpers\ObjectPool.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyIdle.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyPatrollingState.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Barking_Dog\Common Scripts\MouseLook.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\UIController\UILobby.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyChasingState.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyFiringRifleState.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\LookAtPlayer.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\LivingEntity.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\DefineSignals.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\StarterAssetsInputs.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\uiframework_examples-master\ProjectSettings\ProjectVersion.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\DOTween.dll" />
     <None Include="Assets\license.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Barking_Dog\Readme_Please.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -326,6 +423,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
@@ -762,14 +862,17 @@
     <Reference Include="Analytics">
       <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
@@ -794,6 +897,9 @@
     </Reference>
     <Reference Include="Unity.Animation.Rigging.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Addressables">
+      <HintPath>Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualEffectGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
@@ -828,11 +934,17 @@
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="UniTask.DOTween">
+      <HintPath>Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Linq">
+      <HintPath>Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
@@ -881,6 +993,9 @@
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>Library\ScriptAssemblies\UniTask.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>

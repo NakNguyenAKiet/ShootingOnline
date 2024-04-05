@@ -1,6 +1,8 @@
+using deVoid.Utils;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using static ShootingGame.DefineSignals;
 #endif
 
 namespace StarterAssets
@@ -78,6 +80,7 @@ namespace StarterAssets
         public void AimInput(bool newAimState)
         {
             aim = !aim;
+			Signals.Get<TurnOnCrossHair>().Dispatch(aim);
         } 
 		public void ShootInput(bool shoot)
         {

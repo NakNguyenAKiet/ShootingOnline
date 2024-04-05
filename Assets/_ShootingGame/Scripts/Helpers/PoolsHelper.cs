@@ -9,7 +9,7 @@ namespace ShootingGame
     public class PoolsHelper: MonoBehaviour
     {
         public List<Projectile> pooledObjects;
-        public Projectile objectToPool;
+        public Projectile ObjectToPool;
         public int amountToPool;
 
         void Start()
@@ -18,7 +18,7 @@ namespace ShootingGame
             Projectile tmp;
             for (int i = 0; i < amountToPool; i++)
             {
-                tmp = Instantiate(objectToPool);
+                tmp = Instantiate(ObjectToPool, transform);
                 tmp.gameObject.SetActive(false);
                 pooledObjects.Add(tmp);
             }
