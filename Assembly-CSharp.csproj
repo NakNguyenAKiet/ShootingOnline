@@ -78,6 +78,7 @@
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelUILayer.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowProperties.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\EmptyWindowController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\DefineSignals.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\NavigationPanelButton.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\LegacyAnimationScreenTransition.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
@@ -128,8 +129,7 @@
     <Compile Include="Assets\Barking_Dog\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\UIController\UILobby.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyChasingState.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\DefineSignals.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\StarterAssetsInputs.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\VFXDestroyItSelf.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

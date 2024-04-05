@@ -1,4 +1,5 @@
 using Cinemachine;
+using deVoid.Utils;
 using StarterAssets;
 using System.Collections.Generic;
 using System.Security.Claims;
@@ -26,6 +27,8 @@ namespace ShootingGame
         [SerializeField] private VisualEffect HitVFX;
         [SerializeField] private VisualEffect FlameVFX;
         [SerializeField] private PoolsHelper _bulletPool;
+        [SerializeField] private float _energy;
+        [SerializeField] private float _curWeponEnergy = 1;
 
         private Vector3 _mouseWorldPos = Vector3.zero;
         private Vector3 _aimTargetPos;
@@ -37,12 +40,16 @@ namespace ShootingGame
         private string _idAim = "Aim";
         private float _aimRigWeight = 0;
 
+        public float MaxEnergy = 8;
+
         private void Awake()
         {
             _starterAssetsInputs = GetComponent<StarterAssetsInputs>();
             _thirdPersonController = GetComponent<ThirdPersonController>();
             _animator = GetComponent<Animator>();
             _centerScreen = new Vector2(Screen.width / 2, Screen.height / 2);
+
+            _energy = MaxEnergy;
         }
 
         private void Update()
@@ -74,17 +81,25 @@ namespace ShootingGame
                 _thirdPersonController.SetRotateOnMove(true);
             }
 
-            if (_starterAssetsInputs.shoot)
+            if (_starterAssetsInputs.shoot && _energy > 1)
             {
+                _energy -= _curWeponEnergy;
                 _bulletDir = (_mouseWorldPos - _bulletSpawner.position).normalized;
                 _bulletPool.SpawnObjectByDirection(_bulletSpawner, Quaternion.LookRotation(_bulletDir));
-                //Instantiate(_projectilePrefab, _bulletSpawner.position, Quaternion.LookRotation(_bulletDir, Vector3.up));
-                HitVFX.transform.position = _mouseWorldPos;
-                HitVFX.Play();
+
+                VisualEffect Vfx = Instantiate(HitVFX, _mouseWorldPos, Quaternion.identity);
+                
+
                 FlameVFX.Play();
                 _starterAssetsInputs.shoot = false;
             }
 
+            if(_energy <= MaxEnergy)
+            {
+                _energy += Time.deltaTime;
+            }
+
+            Signals.Get<UpdateEnergy>().Dispatch(_energy);
             _aimRig.weight = Mathf.Lerp(_aimRig.weight, _aimRigWeight, Time.deltaTime * 20f);
         }
     }

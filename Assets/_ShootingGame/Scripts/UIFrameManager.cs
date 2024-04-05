@@ -20,7 +20,6 @@ namespace ShootingGame
             uIFrame = defaultUISettings.CreateUIInstance();
             var cameraData = Camera.main.GetUniversalAdditionalCameraData();
             cameraData.cameraStack.Add(uIFrame.GetComponentInChildren<Camera>());
-
         }
         private void Start()
         {

@@ -1,8 +1,8 @@
 using deVoid.Utils;
+using ShootingGame;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
-using static ShootingGame.DefineSignals;
 #endif
 
 namespace StarterAssets

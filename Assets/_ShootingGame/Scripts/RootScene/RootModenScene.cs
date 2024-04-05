@@ -11,6 +11,7 @@ namespace ShootingGame
         private async void Awake()
         {
             await WaitForUIFrame();
+
             UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UILobby);
         }
         private async Task WaitForUIFrame()
