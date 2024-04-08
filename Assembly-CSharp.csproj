@@ -89,6 +89,7 @@
     <Compile Include="Assets\_ShootingGame\Scripts\UIFrameManager.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\ATransitionComponent.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\ToastPanelController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\DestroyAfterSeconds.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyIdle.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\BaseSingleton.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
@@ -129,7 +130,9 @@
     <Compile Include="Assets\Barking_Dog\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\UIController\UILobby.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyChasingState.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\VFXDestroyItSelf.cs" />
+    <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
+    <Compile Include="Assets\Free RPG Icons Pack\Scenes\SetDemoImage_FreeRPGIconsPack.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\PlayVFXOnCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -156,6 +159,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Free RPG Icons Pack\Scenes\Read Me.txt" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />

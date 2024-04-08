@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Animations.Rigging;
 using UnityEngine.InputSystem;
 using UnityEngine.VFX;
+using static UnityEditor.Progress;
 
 namespace ShootingGame
 {
@@ -24,16 +25,18 @@ namespace ShootingGame
         [SerializeField] private PlayerInput _playerInput;
         [SerializeField] private Transform targetTransform;
         [SerializeField] private Transform _bulletSpawner;
+        [SerializeField] private Transform _spellCasting;
         [SerializeField] private VisualEffect HitVFX;
         [SerializeField] private VisualEffect FlameVFX;
         [SerializeField] private PoolsHelper _bulletPool;
         [SerializeField] private float _energy;
         [SerializeField] private float _curWeponEnergy = 1;
+        [SerializeField] private Projectile _spell1Prefab;
+        [SerializeField] private float _spell1Energy = 5;
 
         private Vector3 _mouseWorldPos = Vector3.zero;
         private Vector3 _aimTargetPos;
         private Vector3 _aimDir;
-        private Vector3 _bulletDir;
         private Vector2 _centerScreen;
         private Ray _ray;
 
@@ -54,13 +57,56 @@ namespace ShootingGame
 
         private void Update()
         {
+            GetMouseWorldPos();
+
+            HandleAim();
+
+            ShootingCheck();
+
+            if (_energy <= MaxEnergy)
+            {
+                _energy += Time.deltaTime;
+            }
+
+            Signals.Get<UpdateEnergy>().Dispatch(_energy);
+        }
+
+        private void ShootingCheck()
+        {
+            if (_starterAssetsInputs.shoot && _energy >= _curWeponEnergy)
+            {
+                _energy -= _curWeponEnergy;
+                Vector3 _bulletDir = (_mouseWorldPos - _bulletSpawner.position).normalized;
+                _bulletPool.SpawnObjectByDirection(_bulletSpawner, Quaternion.LookRotation(_bulletDir));
+
+                VisualEffect Vfx = Instantiate(HitVFX, _mouseWorldPos, Quaternion.identity);
+
+                FlameVFX.Play();
+                _starterAssetsInputs.shoot = false;
+            }
+
+            if (_starterAssetsInputs.castSpell_1 && _energy >= _spell1Energy)
+            {
+                _animator.SetTrigger("Spell1");
+                _starterAssetsInputs.castSpell_1 = false;
+                _energy -= _spell1Energy;
+                Vector3 _bulletDir2 = (_mouseWorldPos - _bulletSpawner.position).normalized;
+                Projectile spell =  Instantiate(_spell1Prefab);
+                spell.SetDestination(_bulletSpawner.position, _bulletDir2);
+            }
+        }
+        private void GetMouseWorldPos()
+        {
             _ray = Camera.main.ScreenPointToRay(_centerScreen);
             if (Physics.Raycast(_ray, out RaycastHit hitInfo, 999f, _aimLayerMask))
             {
                 _mouseWorldPos = hitInfo.point;
                 targetTransform.position = _mouseWorldPos;
             }
+        }
 
+        private void HandleAim()
+        {
             _aimCamera.gameObject.SetActive(_starterAssetsInputs.aim);
             _animator.SetBool(_idAim, _starterAssetsInputs.aim);
             if (_starterAssetsInputs.aim)
@@ -80,26 +126,6 @@ namespace ShootingGame
                 _thirdPersonController.SetSensitivity(_nomalSensitivity);
                 _thirdPersonController.SetRotateOnMove(true);
             }
-
-            if (_starterAssetsInputs.shoot && _energy > 1)
-            {
-                _energy -= _curWeponEnergy;
-                _bulletDir = (_mouseWorldPos - _bulletSpawner.position).normalized;
-                _bulletPool.SpawnObjectByDirection(_bulletSpawner, Quaternion.LookRotation(_bulletDir));
-
-                VisualEffect Vfx = Instantiate(HitVFX, _mouseWorldPos, Quaternion.identity);
-                
-
-                FlameVFX.Play();
-                _starterAssetsInputs.shoot = false;
-            }
-
-            if(_energy <= MaxEnergy)
-            {
-                _energy += Time.deltaTime;
-            }
-
-            Signals.Get<UpdateEnergy>().Dispatch(_energy);
             _aimRig.weight = Mathf.Lerp(_aimRig.weight, _aimRigWeight, Time.deltaTime * 20f);
         }
     }

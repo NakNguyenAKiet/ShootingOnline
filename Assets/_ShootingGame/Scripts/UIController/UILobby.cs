@@ -20,8 +20,7 @@ namespace ShootingGame
         [SerializeField] private Transform _crossHair;
         protected async override void Awake()
         {
-            await UniTask.WaitUntil(()=> PlayerController.Instance != null);
-            PlayerController.Instance.LivingEntity.SetHealthBar(_hPBar);
+            base.Awake();
             Signals.Get<TurnOnCrossHair>().AddListener(TurnOnCrossHair);
             Signals.Get<UpdateHP>().AddListener(UpdateHP);
             Signals.Get<UpdateEnergy>().AddListener(UpdateEnergy);
@@ -29,6 +28,8 @@ namespace ShootingGame
         private async void Start()
         {
             await UniTask.WaitUntil(() => PlayerController.Instance != null);
+            await UniTask.WaitUntil(() => PlayerController.Instance.LivingEntity != null);
+            PlayerController.Instance.LivingEntity.SetHealthBar(_hPBar);
             _energyBar.maxValue = PlayerController.Instance.AimingThirdPerson.MaxEnergy;
         }
         private void TurnOnCrossHair(bool isOn)

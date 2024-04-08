@@ -10,7 +10,11 @@ namespace ShootingGame
         List<Transform> movePoints = new List<Transform>();
         Transform movePoint;
         Transform player;
+        Vector3 rootPosition;
+        bool isSetRootPosition = false;
         float timer = 0;
+        [SerializeField] float wanderRadius = 10f;
+        [SerializeField] float chasingRange = 15f;
         private void Awake()
         {
             movePoint = GameObject.Find("MovePoints").transform;
@@ -19,15 +23,21 @@ namespace ShootingGame
         //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            if(!isSetRootPosition)
+            {
+                rootPosition = animator.transform.position;
+                isSetRootPosition = true;
+            }
             navMeshAgent = animator.GetComponent<NavMeshAgent>();
             navMeshAgent.speed = 1.5f;
             timer = 0;
-            movePoints.Clear();
-            foreach (Transform t in movePoint)
-            {
-                movePoints.Add(t);
-            }
-            navMeshAgent.SetDestination(movePoints[Random.Range(0, movePoints.Count)].position);
+            //movePoints.Clear();
+            //foreach (Transform t in movePoint)
+            //{
+            //    movePoints.Add(t);
+            //}
+            //navMeshAgent.SetDestination(movePoints[Random.Range(0, movePoints.Count)].position);
+            SetRandomDestination();
         }
 
         // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -44,7 +54,7 @@ namespace ShootingGame
             }
 
             float distanceToPlayer = Vector3.Distance(animator.transform.position, player.position);
-            if (distanceToPlayer < 10)
+            if (distanceToPlayer < chasingRange)
             {
                 animator.SetBool("isChasing", true);
             }
@@ -55,17 +65,13 @@ namespace ShootingGame
         {
             navMeshAgent.SetDestination(navMeshAgent.transform.position);
         }
-
-        // OnStateMove is called right after Animator.OnAnimatorMove()
-        //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        //{
-        //    // Implement code that processes and affects root motion
-        //}
-
-        // OnStateIK is called right after Animator.OnAnimatorIK()
-        //override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        //{
-        //    // Implement code that sets up animation IK (inverse kinematics)
-        //}
+        void SetRandomDestination()
+        {
+            Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
+            randomDirection += rootPosition;
+            NavMeshHit navHit;
+            NavMesh.SamplePosition(randomDirection, out navHit, wanderRadius, NavMesh.AllAreas);
+            navMeshAgent.SetDestination(navHit.position);
+        }
     }
 }

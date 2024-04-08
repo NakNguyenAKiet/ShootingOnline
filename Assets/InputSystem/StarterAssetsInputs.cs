@@ -15,6 +15,7 @@ namespace StarterAssets
 		public bool jump;
 		public bool aim = false;
 		public bool shoot = false;
+		public bool castSpell_1 = false;
 		public bool sprint;
 
 		[Header("Movement Settings")]
@@ -55,6 +56,11 @@ namespace StarterAssets
         {
 			ShootInput(value.isPressed);
         }
+		
+		public void OnCastSpell_1(InputValue value)
+        {
+            CastSpell_1Input(value.isPressed);
+        }
 #endif
 
 
@@ -87,7 +93,11 @@ namespace StarterAssets
 			if (!aim) return;
             this.shoot = shoot;
         }
-
+		public void CastSpell_1Input(bool isPressed)
+		{
+            if (!aim) return;
+            this.castSpell_1 = isPressed;
+        }
         private void OnApplicationFocus(bool hasFocus)
 		{
 			SetCursorState(cursorLocked);

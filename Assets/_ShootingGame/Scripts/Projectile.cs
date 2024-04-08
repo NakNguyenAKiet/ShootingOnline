@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace ShootingGame
@@ -13,30 +14,23 @@ namespace ShootingGame
         {
             Rigidbody = GetComponent<Rigidbody>();
         }
-
-        private void Start()
-        {
-            //Rigidbody.velocity = transform.forward * Speed;
-        }
         public void ResetVelocity()
         {
             Rigidbody.velocity = transform.forward * Speed;
         }
-        private void OnCollisionEnter(Collision collision)
+        public void SetDestination(Vector3 position, Vector3 Dir)
         {
-            if (collision.transform.TryGetComponent(out LivingEntity target))
+            transform.position = position;
+            transform.rotation = Quaternion.LookRotation(Dir);
+            ResetVelocity();
+        }
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.TryGetComponent(out LivingEntity target))
             {
                 target.TakeDame(dame);
             }
             gameObject.SetActive(false);
         }
-        //private void OnTriggerEnter(Collider other)
-        //{
-        //    if(other.TryGetComponent(out LivingEntity target))
-        //    {
-        //        target.TakeDame(dame);
-        //    }
-        //    gameObject.SetActive(false);
-        //}
     }
 }

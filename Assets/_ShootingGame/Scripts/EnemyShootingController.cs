@@ -13,6 +13,7 @@ namespace ShootingGame
         public Transform ProjectileSpawner;
         public PoolsHelper BulletPool;
         public VisualEffect FireVFX;
+        public VisualEffect FlameVFX;
         private void Reset()
         {
             Animator = GetComponent<Animator>();

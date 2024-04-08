@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414062f9d9180b24eb66136c31c0fe4c, type: 3}
   m_Name: UILobbySettings
   m_EditorClassIdentifier: 
-  templateUIPrefab: {fileID: 2713107200334175261, guid: 0d2569bae0ee1e04a8ecdbfde8a40b55,
+  templateUIPrefab: {fileID: 552754067422338327, guid: 9210b894b023f8145bec7177a6e195ce,
     type: 3}
   screensToRegister:
   - {fileID: 7750582012462864467, guid: e822394e371b49b498bb4624d4395df1, type: 3}
