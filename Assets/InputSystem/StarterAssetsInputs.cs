@@ -16,6 +16,7 @@ namespace StarterAssets
 		public bool aim = false;
 		public bool shoot = false;
 		public bool castSpell_1 = false;
+		public bool inventoryToggle = false;
 		public bool sprint;
 
 		[Header("Movement Settings")]
@@ -26,7 +27,19 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
 
 #if ENABLE_INPUT_SYSTEM
-		public void OnMove(InputValue value)
+        public void OnInventoryToggle(InputValue value)
+        {
+			if (!inventoryToggle)
+			{
+				UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory);
+            }
+			else
+			{
+                UIFrameManager.Instance.uIFrame.HidePanel(ScreenIds.UIInventory);
+            }
+            inventoryToggle = !inventoryToggle;
+        }
+        public void OnMove(InputValue value)
 		{
 			MoveInput(value.Get<Vector2>());
 		}
@@ -103,7 +116,7 @@ namespace StarterAssets
 			SetCursorState(cursorLocked);
 		}
 
-		private void SetCursorState(bool newState)
+		public void SetCursorState(bool newState)
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}

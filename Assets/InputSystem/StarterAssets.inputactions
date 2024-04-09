@@ -67,6 +67,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "InventoryToggle",
+                    "type": "Button",
+                    "id": "b506ce06-6272-4925-8626-0e73e4fc130c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -276,6 +285,17 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "CastSpell_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b79e7c98-b03f-4be6-9be6-c64a7f145da3",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "InventoryToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

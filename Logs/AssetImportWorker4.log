@@ -15,7 +15,7 @@ D:/ProjectGame/ShootingOnline/ShootingOnline
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-64113
+61374
 Successfully changed project path to: D:/ProjectGame/ShootingOnline/ShootingOnline
 D:/ProjectGame/ShootingOnline/ShootingOnline
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ D:/ProjectGame/ShootingOnline/ShootingOnline
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18836] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 353479152 [EditorId] 353479152 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2008] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2088721621 [EditorId] 2088721621 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [18836] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 353479152 [EditorId] 353479152 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2008] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2088721621 [EditorId] 2088721621 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 64.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 301.25 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -67,452 +67,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003544 seconds.
+Registered in 0.280743 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 174 ms
-Refreshing native plugins compatible for Editor in 53.61 ms, found 2 plugins.
+Android Extension - Scanning For ADB Devices 301 ms
+Refreshing native plugins compatible for Editor in 54.15 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.664 seconds
+- Completed reload, in  6.919 seconds
 Domain Reload Profiling:
-	ReloadAssembly (664ms)
-		BeginReloadAssembly (73ms)
+	ReloadAssembly (6920ms)
+		BeginReloadAssembly (4764ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (525ms)
-			LoadAssemblies (72ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1522ms)
+			LoadAssemblies (4762ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (77ms)
+			SetupTypeCache (959ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (393ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (511ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (242ms)
+				InitializePlatformSupportModulesInManaged (365ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (54ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (65ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				ProcessInitializeOnLoadAttributes (58ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003037 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 60.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.102 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1102ms)
-		BeginReloadAssembly (73ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (12ms)
-		EndReloadAssembly (964ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (270ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (520ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (61ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (243ms)
-				ProcessInitializeOnLoadMethodAttributes (115ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5739 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 89 unused Assets / (2.6 MB). Loaded Objects now: 6185.
-Memory consumption went from 327.8 MB to 325.2 MB.
-Total: 4.992100 ms (FindLiveObjects: 0.261500 ms CreateObjectMapping: 0.154900 ms MarkObjects: 4.332600 ms  DeleteObjects: 0.242400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 587192.952557 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/font
-  artifactKey: Guid(c90dad31559f6c34faf95f531d2188e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/font using Guid(c90dad31559f6c34faf95f531d2188e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b89610b8322094177297997d3f8f7a2') in 0.011876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.039310 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/font/zekton free.ttf
-  artifactKey: Guid(cf24f394abd8c3a4887d39e0ab4c79f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/font/zekton free.ttf using Guid(cf24f394abd8c3a4887d39e0ab4c79f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fffb37e41bb44b5d59d48434730dee5') in 0.204862 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.131292 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/joystick
-  artifactKey: Guid(2f5b591d6716e894889dfaddb9834954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/joystick using Guid(2f5b591d6716e894889dfaddb9834954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474b6cd906b628399ded20f79cd17e97') in 0.006148 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.069901 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/joystick/joystick.png
-  artifactKey: Guid(cac38c09a31450041b5ee0287b6b5f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/joystick/joystick.png using Guid(cac38c09a31450041b5ee0287b6b5f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025b081c99a510f1fd9e0b95c847fa82') in 0.018204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.239427 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/window
-  artifactKey: Guid(a0fa0ed5420f91c43875d9aa3dbdf58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/window using Guid(a0fa0ed5420f91c43875d9aa3dbdf58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c8112f62d8af5e8fae70b6f34d46d75') in 0.006254 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.237625 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/window/window_transparent.png
-  artifactKey: Guid(3f2c3b295bfc36b469c97935fd196193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/window/window_transparent.png using Guid(3f2c3b295bfc36b469c97935fd196193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f94bf134f0f53310edad8b9d558f410d') in 0.013596 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.242670 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows
-  artifactKey: Guid(14fc2364f86c4bc4892630a3be41eba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows using Guid(14fc2364f86c4bc4892630a3be41eba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edce5f57ec53fddaa9d274acb34ffa37') in 0.006266 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.039643 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow1_left.png
-  artifactKey: Guid(4d26830925665ff41bdf04b7e65bf7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow1_left.png using Guid(4d26830925665ff41bdf04b7e65bf7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c72984eaacfc2985e66b5a8508d1a1') in 0.031047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/long_arrow_right.png
-  artifactKey: Guid(b390911260f2a2a4a97515c026bc5517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/long_arrow_right.png using Guid(b390911260f2a2a4a97515c026bc5517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fcb24077861d6575da98e309ba70a03') in 0.038699 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.622278 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars
-  artifactKey: Guid(920ee992dde716d4ba568f79be084ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars using Guid(920ee992dde716d4ba568f79be084ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c3c79a7a6905f0c8d6cce3ff4a6c52') in 0.002242 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.015856 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar.png
-  artifactKey: Guid(a504229629ce58648a9c5866b24a13a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar.png using Guid(a504229629ce58648a9c5866b24a13a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9234bb6a1e29bd773bb150a063f8c41f') in 0.020268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/bar_red1.png
-  artifactKey: Guid(039d218ccaddf9b42b8b983c8c404a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/bar_red1.png using Guid(039d218ccaddf9b42b8b983c8c404a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0fac42d8869551dae4d42073e3bfd7') in 0.021096 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.478256 seconds.
-  path: Assets/_ShootingGame/Sprites/bar_blue.png
-  artifactKey: Guid(d97008e34eec76b46a4f56498c754c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/bar_blue.png using Guid(d97008e34eec76b46a4f56498c754c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd582a3fc8298c517b4c87c0aca0769ad') in 0.019209 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.891467 seconds.
-  path: Assets/_ShootingGame/Sprites/bullets.png
-  artifactKey: Guid(92848fd9a41aa2b48bf383cc739e1997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/bullets.png using Guid(92848fd9a41aa2b48bf383cc739e1997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca1e080570a920550d90542da1d50b8') in 0.027853 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.781233 seconds.
-  path: Assets/_ShootingGame/Sprites/joystick.png
-  artifactKey: Guid(cac38c09a31450041b5ee0287b6b5f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/joystick.png using Guid(cac38c09a31450041b5ee0287b6b5f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b49107c261f25b7b153672fc3844ec') in 0.028736 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.349786 seconds.
-  path: Assets/_ShootingGame/Sprites/rocket.png
-  artifactKey: Guid(09fdfcfca2ba1a14a813ae0cd397f033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/rocket.png using Guid(09fdfcfca2ba1a14a813ae0cd397f033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed54eb8249ba2730334eba0acffd34d') in 0.024742 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.798114 seconds.
-  path: Assets/_ShootingGame/Sprites/progress_bar_background1.png
-  artifactKey: Guid(f2ce588e53affdf42ba88001f286abec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/progress_bar_background1.png using Guid(f2ce588e53affdf42ba88001f286abec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef84cf062dade939fb75fd88045c470') in 0.020778 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.222915 seconds.
-  path: Assets/_ShootingGame/Sprites/progress_bar_background.png
-  artifactKey: Guid(514a5e554f904ba4ca4b4aefb7fce00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/progress_bar_background.png using Guid(514a5e554f904ba4ca4b4aefb7fce00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87cf91b04ad325ab756f8f0a1c00cb2c') in 0.022928 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.912518 seconds.
-  path: Assets/_ShootingGame/Sprites/pause.png
-  artifactKey: Guid(be88c4e48260e6c44bcb1196aeca850a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Sprites/pause.png using Guid(be88c4e48260e6c44bcb1196aeca850a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed00c14807483a4b7d6d5f75ccc04c50') in 0.023266 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.566627 seconds.
-  path: Assets/_ShootingGame/Scenes/ModenScene.unity
-  artifactKey: Guid(d0b55fef186419e40ae9c8dfc4b29e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Scenes/ModenScene.unity using Guid(d0b55fef186419e40ae9c8dfc4b29e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d59766f9ab539f9133671704f4effa') in 0.006007 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 195.381507 seconds.
-  path: Assets/_ShootingGame/Prefabs/UIs/UILobbySettings.asset
-  artifactKey: Guid(6f1c575aaca2c1f489133ba193dd29c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ShootingGame/Prefabs/UIs/UILobbySettings.asset using Guid(6f1c575aaca2c1f489133ba193dd29c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6940069c6e4b6158a34b5ca29e21b3') in 0.015984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.935011 seconds.
-  path: Assets/uiframework_examples-master/Assets/External/TextMesh Pro/Sprites
-  artifactKey: Guid(8220bd68a67235747aa43e082489b14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/uiframework_examples-master/Assets/External/TextMesh Pro/Sprites using Guid(8220bd68a67235747aa43e082489b14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '654cf1453ea8e1cec38e9a7796f31cf7') in 0.006897 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003269 seconds.
-Begin MonoManager ReloadAssembly
-Cleanup Blit
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-UnityEngine.Rendering.Blitter:Cleanup () (at Library/PackageCache/com.unity.render-pipelines.core@12.1.11/Runtime/Utilities/Blitter.cs:158)
-UnityEngine.Rendering.Universal.UniversalRenderer:Dispose (bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/UniversalRenderer.cs:361)
-UnityEngine.Rendering.Universal.ScriptableRenderer:Dispose () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/ScriptableRenderer.cs:565)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:DestroyRenderer (UnityEngine.Rendering.Universal.ScriptableRenderer&) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:493)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:DestroyRenderers () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:486)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:OnDisable () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:509)
-
-(Filename: Library/PackageCache/com.unity.render-pipelines.core@12.1.11/Runtime/Utilities/Blitter.cs Line: 158)
-
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.992 seconds
-Domain Reload Profiling:
-	ReloadAssembly (993ms)
-		BeginReloadAssembly (125ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (807ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (230ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (401ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (204ms)
-				ProcessInitializeOnLoadMethodAttributes (105ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5547 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 66 unused Assets / (2.3 MB). Loaded Objects now: 6310.
-Memory consumption went from 314.4 MB to 312.0 MB.
-Total: 6.139400 ms (FindLiveObjects: 0.385000 ms CreateObjectMapping: 0.297500 ms MarkObjects: 5.201300 ms  DeleteObjects: 0.254300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 524.344750 seconds.
-  path: Assets/Free RPG Icons Pack
-  artifactKey: Guid(75bac2ba5652bd8498224795eb5b937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack using Guid(75bac2ba5652bd8498224795eb5b937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59803beecaaeed8055227e1b5065f6c0') in 0.011686 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.378115 seconds.
-  path: Assets/Free RPG Icons Pack/Icons
-  artifactKey: Guid(3d9b2669f4665ae4d8f9c6987ae26f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons using Guid(3d9b2669f4665ae4d8f9c6987ae26f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6e4a1abbacaadc3764b1e110c18279') in 0.006251 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.515916 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon
-  artifactKey: Guid(27dbdb72f82b13542869ae29813d2a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon using Guid(27dbdb72f82b13542869ae29813d2a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a4587a2ce9117c074d0a9e1ffc77a11') in 0.007226 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.280822 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Axe_1.png
-  artifactKey: Guid(60be931574a9c17468f13cdfa68e39ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Axe_1.png using Guid(60be931574a9c17468f13cdfa68e39ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f891e9e5eb395236b857af6b6bc18b84') in 0.062202 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Axe_3.png
-  artifactKey: Guid(4d14b773d329f484780c89a159aae4ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Axe_3.png using Guid(4d14b773d329f484780c89a159aae4ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98dbe3ddf41c61515fa9626d44f78bb4') in 0.025167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Sword_3.png
-  artifactKey: Guid(d838877e721dcbb4cb3bad95ffd9fa0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Sword_3.png using Guid(d838877e721dcbb4cb3bad95ffd9fa0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33c4dce8d7d92675811ef7ed1ada754') in 0.021608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Hammer_1.png
-  artifactKey: Guid(d3236e2344b65ed46b0e5660c6dcf1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Hammer_1.png using Guid(d3236e2344b65ed46b0e5660c6dcf1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faca7236ae4f24f160265b0a94abe5d0') in 0.026967 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Sword_1.png
-  artifactKey: Guid(874be534e1ea3074da09e41e25ee4e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Sword_1.png using Guid(874be534e1ea3074da09e41e25ee4e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292a6c89bf0c61eb414f668105aec862') in 0.025608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_1.png
-  artifactKey: Guid(06b5cddace56b90498046276b4690865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_1.png using Guid(06b5cddace56b90498046276b4690865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5c174600b4b1e84ae8cb84ba7b790f') in 0.027340 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Spear_2.png
-  artifactKey: Guid(0de00b4115f2e194a9272c98df2857ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Spear_2.png using Guid(0de00b4115f2e194a9272c98df2857ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a506e6d827c61bce6faf7f5fa3d581') in 0.028069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_3.png
-  artifactKey: Guid(efd273d4fe6178c4481d3218d6e247d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_3.png using Guid(efd273d4fe6178c4481d3218d6e247d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1869cb7d937a4c10f0c1bab4af116c0') in 0.028494 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.979781 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell
-  artifactKey: Guid(78c13bd7d7073474594a671036861e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell using Guid(78c13bd7d7073474594a671036861e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6729cbf07b5168b4e5ec1824e5eb3a0c') in 0.007292 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.749339 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Buff_1.png
-  artifactKey: Guid(0e04e6492d9812f4190a44d74cc8990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Buff_1.png using Guid(0e04e6492d9812f4190a44d74cc8990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c473dd8fed1df5ff1dcc6731acc1f4') in 0.028143 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.872378 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Buff_2.png
-  artifactKey: Guid(edb6c6f1eb55f4e43a992713db705866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Buff_2.png using Guid(edb6c6f1eb55f4e43a992713db705866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ceb3f90ca186b15df85e050720d031') in 0.035518 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_3.png
-  artifactKey: Guid(6cf658fed04e9ec4eb4dce5566ae2ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_3.png using Guid(6cf658fed04e9ec4eb4dce5566ae2ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ff5d19b0a8694bf8c25f6603151218') in 0.040146 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Water_1.png
-  artifactKey: Guid(66ea6d4dcfce95c4a98eba75acf30526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Water_1.png using Guid(66ea6d4dcfce95c4a98eba75acf30526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86590137dfc5c49032cc4178d6ad562') in 0.035040 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Cold_4.png
-  artifactKey: Guid(7f1214254adb5a44eb704d0f6d08386c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Cold_4.png using Guid(7f1214254adb5a44eb704d0f6d08386c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb79f45c6d8e38b82a732848bb0a885') in 0.032085 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_5.png
-  artifactKey: Guid(b12502ba5c973e3488a651f1e7634829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_5.png using Guid(b12502ba5c973e3488a651f1e7634829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f1ea1294feb25e0048c44077b73743') in 0.039275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_3.png
-  artifactKey: Guid(0b55b49bf61a0e14ab542ec69fe02786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_3.png using Guid(0b55b49bf61a0e14ab542ec69fe02786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141122188b7d608a9a295e47b893839e') in 0.032308 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_2.png
-  artifactKey: Guid(f3e87f4aa00be774c9017322c9bd656c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_2.png using Guid(f3e87f4aa00be774c9017322c9bd656c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f86926652f0f7e0d5568859f6612794') in 0.028034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_3.png
-  artifactKey: Guid(ddfe6380e427a034c98cf286b332173c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_3.png using Guid(ddfe6380e427a034c98cf286b332173c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0bccceda4d58c7edfe007c65a87360') in 0.031427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_2.png
-  artifactKey: Guid(8013ced2516877c43b1e60720f52748f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_2.png using Guid(8013ced2516877c43b1e60720f52748f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd2641b815cb579e8affc9c240e1432') in 0.024625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Cold_3.png
-  artifactKey: Guid(f0866bfd46e46824c861c653550058ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Cold_3.png using Guid(f0866bfd46e46824c861c653550058ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17539520205214472df203db19cbd3bd') in 0.023893 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_4.png
-  artifactKey: Guid(cc16da6188962544787f7f3b5c7f499f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_4.png using Guid(cc16da6188962544787f7f3b5c7f499f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb22dfe1dc371907acf3f11594ee6a18') in 0.028207 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Registered in 2.927255 seconds.

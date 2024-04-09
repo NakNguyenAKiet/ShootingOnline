@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ namespace ShootingGame
     {
         public LivingEntity LivingEntity;
         public AimingThirdPerson AimingThirdPerson;
+        public StarterAssetsInputs StarterAssetsInputs;
         public void SetUpAwake()
         {
 
@@ -16,6 +18,7 @@ namespace ShootingGame
         {
             LivingEntity = GetComponent<LivingEntity>();
             AimingThirdPerson = GetComponent<AimingThirdPerson>();
+            StarterAssetsInputs = GetComponent<StarterAssetsInputs>();
         }
     }
 }

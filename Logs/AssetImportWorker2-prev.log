@@ -1,0 +1,363 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.25f1 (68ef2c4f8861) revision 6876972'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32509 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/ProjectGame/ShootingOnline/ShootingOnline
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+64113
+Successfully changed project path to: D:/ProjectGame/ShootingOnline/ShootingOnline
+D:/ProjectGame/ShootingOnline/ShootingOnline
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28756] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3871731202 [EditorId] 3871731202 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [28756] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3871731202 [EditorId] 3871731202 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 56.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/ProjectGame/ShootingOnline/ShootingOnline/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12129 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003939 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 188 ms
+Refreshing native plugins compatible for Editor in 55.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.647 seconds
+Domain Reload Profiling:
+	ReloadAssembly (647ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (516ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (66ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (398ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (249ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (60ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002940 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 58.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.998 seconds
+Domain Reload Profiling:
+	ReloadAssembly (998ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (12ms)
+		EndReloadAssembly (857ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (212ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (488ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (58ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (109ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5739 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 89 unused Assets / (2.6 MB). Loaded Objects now: 6185.
+Memory consumption went from 327.8 MB to 325.2 MB.
+Total: 8.819900 ms (FindLiveObjects: 0.848300 ms CreateObjectMapping: 0.336600 ms MarkObjects: 7.192900 ms  DeleteObjects: 0.415000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 587047.127663 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows
+  artifactKey: Guid(96761de9252a2be45b984c64f3307bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows using Guid(96761de9252a2be45b984c64f3307bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b1da4733a26c450cf820b825e29096') in 0.013655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.045035 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow1_left.png
+  artifactKey: Guid(9871e4d5e19cea6419d057b79ce1a1a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow1_left.png using Guid(9871e4d5e19cea6419d057b79ce1a1a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e285fa0056839911d789331d098a3c81') in 0.051304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.514881 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow1_left.png
+  artifactKey: Guid(9871e4d5e19cea6419d057b79ce1a1a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow1_left.png using Guid(9871e4d5e19cea6419d057b79ce1a1a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18edb99f0869481c2d1adba2053e0d58') in 0.034777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/plus.png
+  artifactKey: Guid(36909c7c187739945aecb80f7c59fa4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/plus.png using Guid(36909c7c187739945aecb80f7c59fa4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303748be3cf49fedba15c08aa47a93df') in 0.019544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.887675 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar.png
+  artifactKey: Guid(5ac1b94d4d2f7eb4e966846bb93a15cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar.png using Guid(5ac1b94d4d2f7eb4e966846bb93a15cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f18e323c5c7cfb5bc6a6ad2be0fda2') in 0.020420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/progress_bar.png
+  artifactKey: Guid(be40ff228ca528248b495d5025a1e327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/progress_bar.png using Guid(be40ff228ca528248b495d5025a1e327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c752c390b1985c0c33d646b5cd372b') in 0.029349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.173485 seconds.
+  path: Assets/Readme.asset
+  artifactKey: Guid(4181bfe715a83e843b7538d750dc57cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Readme.asset using Guid(4181bfe715a83e843b7538d750dc57cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e05e0fd7fd6d1145bb35702a500d86b6') in 0.019427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.351701 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_
+  artifactKey: Guid(88cb5b06be277ff47af53a3b55f2e594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_ using Guid(88cb5b06be277ff47af53a3b55f2e594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ad0181df104ede09a2a9ed3b07cf11') in 0.001610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.844180 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/atlas.png
+  artifactKey: Guid(de0b90896ca495c4e9c8abc4b20984bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/atlas.png using Guid(de0b90896ca495c4e9c8abc4b20984bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aad881146130ad78d6057a459c60e65') in 0.136990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.676805 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/SciFi_Skin.guiskin
+  artifactKey: Guid(f058b20721493ca4ab54f4601527c8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/SciFi_Skin.guiskin using Guid(f058b20721493ca4ab54f4601527c8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54429059fe2ba2059e3f424774720c62') in 0.013932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.468151 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets
+  artifactKey: Guid(50e789a0dde15ea408f108817afdd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets using Guid(50e789a0dde15ea408f108817afdd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4935dc43fc9969f24412011a6c6498') in 0.006307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.677191 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets
+  artifactKey: Guid(e02a61f4a8ab21e46af118a765d7c161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets using Guid(e02a61f4a8ab21e46af118a765d7c161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041754f85204df88bb8c9ba2271616fa') in 0.006312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.355865 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/bars
+  artifactKey: Guid(7c88e294df8220b46b64ce2b1283db45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/bars using Guid(7c88e294df8220b46b64ce2b1283db45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b090b23e7393af38b6e705f12882aa') in 0.001769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.899170 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/bars/bar_blue.png
+  artifactKey: Guid(d97008e34eec76b46a4f56498c754c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/bars/bar_blue.png using Guid(d97008e34eec76b46a4f56498c754c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8374b2df078c7f21e856fe6bd55e6053') in 0.019270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/bars/progress_bar_background1.png
+  artifactKey: Guid(f2ce588e53affdf42ba88001f286abec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/bars/progress_bar_background1.png using Guid(f2ce588e53affdf42ba88001f286abec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40033bc1550a0f1c93f444bb963fdcdb') in 0.012766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/bars/progress_bar_background.png
+  artifactKey: Guid(514a5e554f904ba4ca4b4aefb7fce00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/bars/progress_bar_background.png using Guid(514a5e554f904ba4ca4b4aefb7fce00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04abe187b099c9a0967188dc3c41e457') in 0.012925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.456740 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/buttons
+  artifactKey: Guid(daa020ed6af08814980051671400614e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/buttons using Guid(daa020ed6af08814980051671400614e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08f58dd2839e2a0aa943e11c730cc4d') in 0.006515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052689 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/buttons/bullets.png
+  artifactKey: Guid(92848fd9a41aa2b48bf383cc739e1997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/buttons/bullets.png using Guid(92848fd9a41aa2b48bf383cc739e1997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee37ada5449c2775be635d2495c2b2f1') in 0.019195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/buttons/button_active.png
+  artifactKey: Guid(f6ea146deca400a4393a2e968f3c8edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/buttons/button_active.png using Guid(f6ea146deca400a4393a2e968f3c8edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae13935f81a786a2e46ab9ab18c1940') in 0.014057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001148 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/buttons/rocket.png
+  artifactKey: Guid(09fdfcfca2ba1a14a813ae0cd397f033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/buttons/rocket.png using Guid(09fdfcfca2ba1a14a813ae0cd397f033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3dc5b8c83451585e186a19c71cd3268') in 0.010495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.339248 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/joystick/joystick_back.png
+  artifactKey: Guid(77375c6b0c90df8439b9d65968144418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/joystick/joystick_back.png using Guid(77375c6b0c90df8439b9d65968144418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b05a9821fc25dc9ba430d8d5886cb3') in 0.022264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.483546 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/window/window_transparent1.png
+  artifactKey: Guid(bf29fc1ead3c1c54abe50df88cae3f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Skin_Assets/window/window_transparent1.png using Guid(bf29fc1ead3c1c54abe50df88cae3f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23766d3a28d9c575b18d17345818dce6') in 0.013134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.294537 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow1_right.png
+  artifactKey: Guid(d2753673b9cc50b43aa4bf01154b74ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow1_right.png using Guid(d2753673b9cc50b43aa4bf01154b74ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b47fbb6254be2dcd1eefa787deed83') in 0.029624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow_right.png
+  artifactKey: Guid(493f59047c7bb9847a84346a4a21271d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow_right.png using Guid(493f59047c7bb9847a84346a4a21271d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d3aea75e2942784211f011f9d192d7') in 0.016765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/plus.png
+  artifactKey: Guid(5777e459dc26a0d4eb8406320d59ba44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/arrows/plus.png using Guid(5777e459dc26a0d4eb8406320d59ba44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2154ce48c5efb0756ea6154ccf370767') in 0.025240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.642641 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar1.png
+  artifactKey: Guid(1411a64fdbfe95e489fb166f2d1dfa4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar1.png using Guid(1411a64fdbfe95e489fb166f2d1dfa4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b07ead2cc8e44e7b05e95e6d601f720b') in 0.020343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/bar_red.png
+  artifactKey: Guid(df5bae37f967db74ea9ca73e1ed637ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/bar_red.png using Guid(df5bae37f967db74ea9ca73e1ed637ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ca7e12976a8e8c4e16ef8dcbeac7e9') in 0.015563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/progress_bar1.png
+  artifactKey: Guid(f4bd054bf5856584ab6a780d8aae60b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/_SciFi_GUISkin_/Bonus_Assets/bars/progress_bar1.png using Guid(f4bd054bf5856584ab6a780d8aae60b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d25120d0b77214b7ef7e1475b93537a') in 0.018111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.457677 seconds.
+  path: Assets/_ShootingGame/Sprites/bar_blue1.png
+  artifactKey: Guid(18dbea361fb359b4ea3b8ff0bf367ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/bar_blue1.png using Guid(18dbea361fb359b4ea3b8ff0bf367ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd6c5452cfdb7bcb8c5f8cb9cd7e977') in 0.020880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.889789 seconds.
+  path: Assets/_ShootingGame/Sprites/button1.png
+  artifactKey: Guid(c26f3b4b0e38c5244941d6fd66ec77cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/button1.png using Guid(c26f3b4b0e38c5244941d6fd66ec77cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3163ec53cbad9975d66e39579a591c7b') in 0.038743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.776288 seconds.
+  path: Assets/_ShootingGame/Sprites/joystick_back.png
+  artifactKey: Guid(77375c6b0c90df8439b9d65968144418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/joystick_back.png using Guid(77375c6b0c90df8439b9d65968144418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '282bbffbfbc6fd2d4b998be30adb3967') in 0.052631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.325569 seconds.
+  path: Assets/_ShootingGame/Sprites/window_transparent.png
+  artifactKey: Guid(3f2c3b295bfc36b469c97935fd196193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Sprites/window_transparent.png using Guid(3f2c3b295bfc36b469c97935fd196193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a07d47ac672122b14b2f477a1284363') in 0.057937 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

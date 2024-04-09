@@ -29,8 +29,12 @@ namespace ShootingGame
             if (other.TryGetComponent(out LivingEntity target))
             {
                 target.TakeDame(dame);
+                gameObject.SetActive(false);
             }
-            gameObject.SetActive(false);
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

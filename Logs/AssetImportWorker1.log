@@ -15,7 +15,7 @@ D:/ProjectGame/ShootingOnline/ShootingOnline
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64113
+61374
 Successfully changed project path to: D:/ProjectGame/ShootingOnline/ShootingOnline
 D:/ProjectGame/ShootingOnline/ShootingOnline
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ D:/ProjectGame/ShootingOnline/ShootingOnline
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [45276] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2089887268 [EditorId] 2089887268 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8480] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 801942324 [EditorId] 801942324 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [45276] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2089887268 [EditorId] 2089887268 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8480] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 801942324 [EditorId] 801942324 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 62.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 61.00 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -67,78 +67,78 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004760 seconds.
+Registered in 0.004024 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 310 ms
-Refreshing native plugins compatible for Editor in 57.02 ms, found 2 plugins.
+Android Extension - Scanning For ADB Devices 203 ms
+Refreshing native plugins compatible for Editor in 61.25 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.464 seconds
+- Completed reload, in  0.700 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1465ms)
-		BeginReloadAssembly (163ms)
+	ReloadAssembly (700ms)
+		BeginReloadAssembly (54ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (1038ms)
-			LoadAssemblies (161ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (572ms)
+			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (464ms)
+			SetupTypeCache (79ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (521ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (434ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (369ms)
+				InitializePlatformSupportModulesInManaged (270ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (57ms)
+				RefreshPlugins (61ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (62ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				ProcessInitializeOnLoadAttributes (68ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003934 seconds.
+Registered in 0.003009 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 60.48 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 62.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.229 seconds
+- Completed reload, in  1.114 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1229ms)
-		BeginReloadAssembly (83ms)
+	ReloadAssembly (1115ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (1074ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (952ms)
 			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (371ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (530ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (539ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (61ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (244ms)
-				ProcessInitializeOnLoadMethodAttributes (118ms)
+				RefreshPlugins (63ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (245ms)
+				ProcessInitializeOnLoadMethodAttributes (122ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -147,12 +147,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5739 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 89 unused Assets / (2.6 MB). Loaded Objects now: 6185.
-Memory consumption went from 327.8 MB to 325.2 MB.
-Total: 5.582900 ms (FindLiveObjects: 0.278200 ms CreateObjectMapping: 0.168300 ms MarkObjects: 4.837000 ms  DeleteObjects: 0.298600 ms)
+Unloading 5742 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 89 unused Assets / (2.6 MB). Loaded Objects now: 6190.
+Memory consumption went from 328.5 MB to 325.9 MB.
+Total: 5.237700 ms (FindLiveObjects: 0.290800 ms CreateObjectMapping: 0.175700 ms MarkObjects: 4.454300 ms  DeleteObjects: 0.316300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,70 +167,28 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 586206.393104 seconds.
-  path: Assets/Sci-Fi UI/Demo.unity
-  artifactKey: Guid(13070929f2d2dc3468bb951653444db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/Demo.unity using Guid(13070929f2d2dc3468bb951653444db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dffb8649e467d6979a41da5a0465318a') in 0.012552 seconds 
+  Time since last request: 616278.029899 seconds.
+  path: Assets/_ShootingGame/Prefabs/UIs/UILobby.prefab
+  artifactKey: Guid(e822394e371b49b498bb4624d4395df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Prefabs/UIs/UILobby.prefab using Guid(e822394e371b49b498bb4624d4395df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe7730caf5e783f89b3e0de9793dd64') in 0.065892 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 821.422320 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar1.png
-  artifactKey: Guid(fd496259f55fb1f4f89429cd523c1af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar1.png using Guid(fd496259f55fb1f4f89429cd523c1af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a790edef3b467d6e355d227a09a9d4bb') in 0.068016 seconds 
+  Time since last request: 1567.203309 seconds.
+  path: Assets/_ShootingGame/Prefabs/Projectile.prefab
+  artifactKey: Guid(ddace426264e95e4ea5a085f2bf68963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Prefabs/Projectile.prefab using Guid(ddace426264e95e4ea5a085f2bf68963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9aea751ac5c71c4e4bd98a348f7c417') in 0.165418 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_red1.png
-  artifactKey: Guid(2678aad9451e8e44a9c17d6e98886f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_red1.png using Guid(2678aad9451e8e44a9c17d6e98886f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c74b72ab0eb0e9a46a23fcea72612d') in 0.014223 seconds 
+  Time since last request: 0.000028 seconds.
+  path: Assets/_ShootingGame/Prefabs/Spell1.prefab
+  artifactKey: Guid(bac4bdc7a8261974085c4d75c5bc1304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Prefabs/Spell1.prefab using Guid(bac4bdc7a8261974085c4d75c5bc1304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24c62874bc8ea4dc910c0110c6970f74') in 0.015325 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_purple.png
-  artifactKey: Guid(1ceb59d66cd59eb40a2da04ee9509bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_purple.png using Guid(1ceb59d66cd59eb40a2da04ee9509bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27955dd9620efaae229fee1de40e4db3') in 0.009724 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.246615 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow_left.png
-  artifactKey: Guid(6d7b5d72581e8ca48b333e83a25d1514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow_left.png using Guid(6d7b5d72581e8ca48b333e83a25d1514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667de8b303561bb1fe0dbe7aa461f9c6') in 0.015914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/back_arrow.png
-  artifactKey: Guid(a9ef9e2f50f97a84bbd269b5f7cc5ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/back_arrow.png using Guid(a9ef9e2f50f97a84bbd269b5f7cc5ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45a77522659a333e956e861573d248a') in 0.013146 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/long_arrow_left.png
-  artifactKey: Guid(5d663ef25d3d5514a8d099e72353244b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/long_arrow_left.png using Guid(5d663ef25d3d5514a8d099e72353244b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a65b09507a7e3b7ade40f842fbeeec8') in 0.013861 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.511870 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow_left.png
-  artifactKey: Guid(6d7b5d72581e8ca48b333e83a25d1514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow_left.png using Guid(6d7b5d72581e8ca48b333e83a25d1514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b154072ba02e8d5a597b39cadbe859') in 0.031408 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/long_arrow_left.png
-  artifactKey: Guid(5d663ef25d3d5514a8d099e72353244b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/long_arrow_left.png using Guid(5d663ef25d3d5514a8d099e72353244b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd985974c0eaa551820d4b05400ce45d') in 0.041192 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.866387 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_purple.png
-  artifactKey: Guid(1ceb59d66cd59eb40a2da04ee9509bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_purple.png using Guid(1ceb59d66cd59eb40a2da04ee9509bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1989f0348ec4c7e379c1822efb16ec0') in 0.020533 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/progress_bar1.png
-  artifactKey: Guid(4f0d8a728e226ac40a44b1738ca64db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/progress_bar1.png using Guid(4f0d8a728e226ac40a44b1738ca64db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3ff08b52abb38f9f421cfc0d82cffe') in 0.023041 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/_ShootingGame/Prefabs/RobotShooting.prefab
+  artifactKey: Guid(98ed20168518bb64d935e5515743a2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_ShootingGame/Prefabs/RobotShooting.prefab using Guid(98ed20168518bb64d935e5515743a2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b36578ac0cc809c5e818aa97a9651d4') in 0.086971 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

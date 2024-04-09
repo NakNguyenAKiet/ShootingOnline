@@ -18,9 +18,14 @@ namespace ShootingGame
         [SerializeField] private Slider _hPBar;
         [SerializeField] private Slider _energyBar;
         [SerializeField] private Transform _crossHair;
+        [SerializeField] private Button _menuButton;
+        [SerializeField] private Button _dimButton;
         protected async override void Awake()
         {
             base.Awake();
+            await UniTask.WaitUntil(() => PlayerController.Instance != null);
+            await UniTask.WaitUntil(() => UIFrameManager.Instance != null);
+            _menuButton.onClick.AddListener(() => UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory));
             Signals.Get<TurnOnCrossHair>().AddListener(TurnOnCrossHair);
             Signals.Get<UpdateHP>().AddListener(UpdateHP);
             Signals.Get<UpdateEnergy>().AddListener(UpdateEnergy);
