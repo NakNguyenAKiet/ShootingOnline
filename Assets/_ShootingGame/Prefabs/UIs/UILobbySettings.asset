@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 414062f9d9180b24eb66136c31c0fe4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c372662967b5414994c13c18609b362, type: 3}
   m_Name: UILobbySettings
   m_EditorClassIdentifier: 
-  templateUIPrefab: {fileID: 552754067422338327, guid: 9210b894b023f8145bec7177a6e195ce,
+  templateUIPrefab: {fileID: 2087122004605057105, guid: d3ec0ee8f43641c45912b4b19201f636,
     type: 3}
   screensToRegister:
   - {fileID: 7750582012462864467, guid: e822394e371b49b498bb4624d4395df1, type: 3}
   - {fileID: 4385724365707002785, guid: cf7fe0ec04db64148afbf399de9d3932, type: 3}
   deactivateScreenGOs: 1
+  _is3D: 0

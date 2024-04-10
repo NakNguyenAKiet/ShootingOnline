@@ -8,16 +8,17 @@ namespace ShootingGame
 {
     public class RootModenScene : MonoBehaviour
     {
-        private async void Awake()
+        private void Awake()
         {
-            await WaitForUIFrame();
-
-            UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UILobby);
         }
-        private async Task WaitForUIFrame()
+        private async void Start()
         {
-            await UniTask.WaitUntil(() =>UIFrameManager.Instance != null);
+            await UniTask.WaitUntil(() => UIFrameManager.Instance !=null);
             await UniTask.WaitUntil(() => UIFrameManager.Instance.HasScreenId(ScreenIds.UILobby));
+            await UniTask.WaitUntil(() => PlayerController.Instance != null);
+
+            await UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UILobby);
         }
+
     }
 }

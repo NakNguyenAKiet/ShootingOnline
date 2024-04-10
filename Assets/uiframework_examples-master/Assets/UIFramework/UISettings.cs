@@ -7,7 +7,7 @@ namespace deVoid.UIFramework
     /// Template for an UI. You can rig the prefab for the UI Frame itself and all the screens that should
     /// be instanced and registered upon instantiating a new UI Frame.
     /// </summary>
-    
+
     [CreateAssetMenu(fileName = "UISettings", menuName = "deVoid UI/UI Settings")]
     public class UISettings : ScriptableObject
     {
@@ -17,6 +17,8 @@ namespace deVoid.UIFramework
         [SerializeField] private List<GameObject> screensToRegister = null;
         [Tooltip("In case a screen prefab is not deactivated, should the system automatically deactivate its GameObject upon instantiation? If false, the screen will be at a visible state upon instantiation.")]
         [SerializeField] private bool deactivateScreenGOs = true;
+        [SerializeField] private bool _is3D;
+        public bool Is3D => _is3D;
 
         /// <summary>
         /// Creates an instance of the UI Frame Prefab. By default, also instantiates
@@ -25,7 +27,8 @@ namespace deVoid.UIFramework
         /// </summary>
         /// <param name="instanceAndRegisterScreens">Should the screens listed in the Settings file be instanced and registered?</param>
         /// <returns>A new UI Frame</returns>
-        public UIFrame CreateUIInstance(bool instanceAndRegisterScreens = true, UIFrame newUI = null) {
+        public UIFrame CreateUIInstance(bool instanceAndRegisterScreens = true, UIFrame newUI = null)
+        {
             if (newUI == null)
                 newUI = Instantiate(templateUIPrefab);
 
@@ -53,23 +56,28 @@ namespace deVoid.UIFramework
 
             return newUI;
         }
-        
-        private void OnValidate() {
+
+        private void OnValidate()
+        {
             List<GameObject> objectsToRemove = new List<GameObject>();
-            for(int i = 0; i < screensToRegister.Count; i++) {
+            for (int i = 0; i < screensToRegister.Count; i++)
+            {
                 var screenCtl = screensToRegister[i].GetComponent<IUIScreenController>();
-                if (screenCtl == null) {
+                if (screenCtl == null)
+                {
                     objectsToRemove.Add(screensToRegister[i]);
                 }
             }
 
-            if (objectsToRemove.Count > 0) {
+            if (objectsToRemove.Count > 0)
+            {
                 Debug.LogError("[UISettings] Some GameObjects that were added to the Screen Prefab List didn't have ScreenControllers attached to them! Removing.");
-                foreach (var obj in objectsToRemove) {
+                foreach (var obj in objectsToRemove)
+                {
                     Debug.LogError("[UISettings] Removed " + obj.name + " from " + name + " as it has no Screen Controller attached!");
                     screensToRegister.Remove(obj);
                 }
             }
-        }        
+        }
     }
 }

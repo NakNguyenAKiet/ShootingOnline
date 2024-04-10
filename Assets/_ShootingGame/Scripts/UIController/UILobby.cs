@@ -25,7 +25,7 @@ namespace ShootingGame
             base.Awake();
             await UniTask.WaitUntil(() => PlayerController.Instance != null);
             await UniTask.WaitUntil(() => UIFrameManager.Instance != null);
-            _menuButton.onClick.AddListener(() => UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory));
+            _menuButton.onClick.AddListener(async () => await UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory));
             Signals.Get<TurnOnCrossHair>().AddListener(TurnOnCrossHair);
             Signals.Get<UpdateHP>().AddListener(UpdateHP);
             Signals.Get<UpdateEnergy>().AddListener(UpdateEnergy);

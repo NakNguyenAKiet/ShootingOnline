@@ -8,22 +8,28 @@ using UnityEngine.Rendering.Universal;
 
 namespace ShootingGame
 {
-    public class UIFrameManager : ManualSingletonMono<UIFrameManager>
+    public class UIFrameManager : MonoBehaviour
     {
+        private static UIFrameManager _instance;
+        public static UIFrameManager Instance => _instance;
         [SerializeField] private UISettings defaultUISettings = null;
 
         public UIFrame uIFrame;
 
-        public override void Awake()
+        public void Awake()
         {
-            base.Awake();
             uIFrame = defaultUISettings.CreateUIInstance();
             var cameraData = Camera.main.GetUniversalAdditionalCameraData();
             cameraData.cameraStack.Add(uIFrame.GetComponentInChildren<Camera>());
-        }
-        private void Start()
-        {
-            uIFrame.ShowPanel(ScreenIds.UILobby);
+
+            if((_instance != null))
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                _instance = this;
+            }
         }
 
         public bool HasScreenId(string id)

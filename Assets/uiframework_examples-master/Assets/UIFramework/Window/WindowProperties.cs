@@ -1,21 +1,26 @@
 ﻿using UnityEngine;
 
-namespace deVoid.UIFramework {
+namespace deVoid.UIFramework
+{
     /// <summary>
     /// Properties common to all windows
     /// </summary>
-    [System.Serializable] 
-    public class WindowProperties : IWindowProperties {
-        [SerializeField] 
+    [System.Serializable]
+    public class WindowProperties : IWindowProperties
+    {
+        [SerializeField]
         protected bool hideOnForegroundLost = true;
 
-        [SerializeField] 
+        [SerializeField]
         protected WindowPriority windowQueuePriority = WindowPriority.ForceForeground;
 
         [SerializeField]
         protected bool isPopup = false;
 
-        public WindowProperties() {
+        public string PreviousWindowId { get; set; }
+
+        public WindowProperties()
+        {
             hideOnForegroundLost = true;
             windowQueuePriority = WindowPriority.ForceForeground;
             isPopup = false;
@@ -27,7 +32,8 @@ namespace deVoid.UIFramework {
         /// </summary>
         /// <value>Force Foreground opens it immediately, Enqueue queues it so that it's opened as soon as
         /// the current one is closed. </value>
-        public WindowPriority WindowQueuePriority {
+        public WindowPriority WindowQueuePriority
+        {
             get { return windowQueuePriority; }
             set { windowQueuePriority = value; }
         }
@@ -36,7 +42,8 @@ namespace deVoid.UIFramework {
         /// Should this window be hidden when other window takes its foreground?
         /// </summary>
         /// <value><c>true</c> if hide on foreground lost; otherwise, <c>false</c>.</value>
-        public bool HideOnForegroundLost {
+        public bool HideOnForegroundLost
+        {
             get { return hideOnForegroundLost; }
             set { hideOnForegroundLost = value; }
         }
@@ -53,18 +60,21 @@ namespace deVoid.UIFramework {
         /// in front of all other Windows
         /// </summary>
         /// <value><c>true</c> if this window is a popup; otherwise, <c>false</c>.</value>
-        public bool IsPopup {
+        public bool IsPopup
+        {
             get { return isPopup; }
             set { isPopup = value; }
         }
 
-        public WindowProperties(bool suppressPrefabProperties = false) {
+        public WindowProperties(bool suppressPrefabProperties = false)
+        {
             WindowQueuePriority = WindowPriority.ForceForeground;
             HideOnForegroundLost = false;
             SuppressPrefabProperties = suppressPrefabProperties;
         }
 
-        public WindowProperties(WindowPriority priority, bool hideOnForegroundLost = false, bool suppressPrefabProperties = false) {
+        public WindowProperties(WindowPriority priority, bool hideOnForegroundLost = false, bool suppressPrefabProperties = false)
+        {
             WindowQueuePriority = priority;
             HideOnForegroundLost = hideOnForegroundLost;
             SuppressPrefabProperties = suppressPrefabProperties;

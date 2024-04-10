@@ -5,11 +5,24 @@ using UnityEngine;
 
 namespace ShootingGame
 {
-    public class PlayerController : ManualSingletonMono<PlayerController>
+    public class PlayerController : MonoBehaviour
     {
+        private static PlayerController _instance;
+        public static PlayerController Instance => _instance;
         public LivingEntity LivingEntity;
         public AimingThirdPerson AimingThirdPerson;
         public StarterAssetsInputs StarterAssetsInputs;
+        private void Awake()
+        {
+            if(_instance != null)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                _instance = this;
+            }
+        }
         public void SetUpAwake()
         {
 

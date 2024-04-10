@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
+using ShootingGame;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +22,6 @@ namespace deVoid.UIFramework
         private Canvas mainCanvas;
         private GraphicRaycaster graphicRaycaster;
         public bool HasInitialized;
-
 
         /// <summary>
         /// The main canvas of this UI
@@ -82,7 +84,9 @@ namespace deVoid.UIFramework
         /// Shows a panel by its id, passing no Properties.
         /// </summary>
         /// <param name="screenId">Panel Id</param>
-        public void ShowPanel(string screenId) {
+        public async Task ShowPanel(string screenId)
+        {
+            await CheckInit(screenId);
             panelLayer.ShowScreenById(screenId);
         }
 
@@ -93,7 +97,9 @@ namespace deVoid.UIFramework
         /// <param name="properties">Properties.</param>
         /// <typeparam name="T">The type of properties to be passed in.</typeparam>
         /// <seealso cref="IPanelProperties"/>
-        public void ShowPanel<T>(string screenId, T properties) where T : IPanelProperties {
+        public async Task ShowPanel<T>(string screenId, T properties) where T : IPanelProperties
+        {
+            await CheckInit(screenId);
             panelLayer.ShowScreenById<T>(screenId, properties);
         }
 
@@ -101,7 +107,8 @@ namespace deVoid.UIFramework
         /// Hides the panel with the given id.
         /// </summary>
         /// <param name="screenId">Identifier.</param>
-        public void HidePanel(string screenId) {
+        public async Task HidePanel(string screenId) {
+            await CheckInit(screenId);
             panelLayer.HideScreenById(screenId);
         }
 
@@ -111,6 +118,14 @@ namespace deVoid.UIFramework
         /// <param name="screenId">Identifier.</param>
         public void OpenWindow(string screenId) {
             windowLayer.ShowScreenById(screenId);
+        }
+        
+        private async Task CheckInit(string screenId)
+        {
+            if (!HasInitialized && !UIFrameManager.Instance.HasScreenId(screenId))
+            {
+                await UniTask.WaitUntil(() => UIFrameManager.Instance.HasScreenId(screenId));
+            }
         }
 
         /// <summary>

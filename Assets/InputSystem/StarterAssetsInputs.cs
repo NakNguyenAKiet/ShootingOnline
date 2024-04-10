@@ -27,15 +27,15 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
 
 #if ENABLE_INPUT_SYSTEM
-        public void OnInventoryToggle(InputValue value)
+        public async void OnInventoryToggle(InputValue value)
         {
 			if (!inventoryToggle)
 			{
-				UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory);
+				await UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory);
             }
 			else
 			{
-                UIFrameManager.Instance.uIFrame.HidePanel(ScreenIds.UIInventory);
+                await UIFrameManager.Instance.uIFrame.HidePanel(ScreenIds.UIInventory);
             }
             inventoryToggle = !inventoryToggle;
         }
