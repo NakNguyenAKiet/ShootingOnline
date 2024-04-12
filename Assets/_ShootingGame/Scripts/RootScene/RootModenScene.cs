@@ -18,6 +18,9 @@ namespace ShootingGame
             await UniTask.WaitUntil(() => PlayerController.Instance != null);
 
             await UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UILobby);
+
+            Cursor.lockState = CursorLockMode.Locked;
+
         }
 
     }

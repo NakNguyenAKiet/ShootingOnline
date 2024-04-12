@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2021_3_25;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;STARTER_ASSETS_PACKAGES_CHECKED;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_25;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;STARTER_ASSETS_PACKAGES_CHECKED;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -59,19 +59,28 @@
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\StartWindowController.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\PlayerController.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyFiringRifleState.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\ScreenPropertyInterfaces.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\ItemProfile.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\UIController\UIInventory.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\ATransitionComponent.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\LivingEntity.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenTransitions\SlideScreenTransition.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowProperties.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenIds.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\ItemLooter.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\PlayerWindowController.cs" />
     <Compile Include="Assets\SFInventory\Scripts\SFItemsSelect.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\AUIScreenController.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\RootScene\RootModenScene.cs" />
     <Compile Include="Assets\SFInventory\Scripts\MouseDragCell.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\MouseFollower.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\UISettings.cs" />
     <Compile Include="Assets\InventoryAsset\InventoryController\InventoryControllerScript\InventoryController.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\SaveSystem\ItemData.cs" />
     <Compile Include="Assets\Free RPG Icons Pack\Scenes\SetDemoImage_FreeRPGIconsPack.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryItem\InventoryItemScript\ItemInitializer.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\AUILayer.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\UIController\ScreenIds.cs" />
@@ -83,33 +92,40 @@
     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\UIDemoController.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\EmptyWindowController.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\DefineSignals.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\DefineSignals.cs" />
     <Compile Include="Assets\InventoryAsset\Tests\TestScripts\Test.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\NavigationPanelButton.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowPriority.cs" />
     <Compile Include="Assets\SFInventory\Scripts\InventoryFill.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryItem\InventoryItemScript\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\SFInventory\Scripts\TestItemsAdder.cs" />
     <Compile Include="Assets\Barking_Dog\Common Scripts\Turn_Move.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelUILayer.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryItem\InventoryItemScript\AddItem.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Helpers\PlayVFXOnCollision.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\UIFrameManager.cs" />
     <Compile Include="Assets\InventoryAsset\Scenes\ExtraScene\InventoryExtraScene\Scripts\FashionApplicator.cs" />
     <Compile Include="Assets\InventoryAsset\Scenes\ExtraScene\InventoryExtraScene\Hats\Hat.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\ScreenControllerInterfaces.cs" />
     <Compile Include="Assets\SFInventory\Scripts\SFInventoryItem.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\ToastPanelController.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Helpers\DestroyAfterSeconds.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyIdle.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\BaseSingleton.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\UIItemDetail.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\BaseSingleton.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelPriority.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\InventoryAsset\Scenes\ExtraScene\InventoryExtraScene\Scripts\Chest.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\LookAtPlayer.cs" />
     <Compile Include="Assets\InventoryAsset\InventoryUI\InventoryUIScripts\InventoryUIManager.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\NavigationPanelController.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\LegacyAnimationScreenTransition.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Signals.cs" />
     <Compile Include="Assets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\SimpleFadeTransition.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryItem\InventoryItemScript\DragItem.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Projectile.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenTransitions\ScaleScreenTransition.cs" />
@@ -120,48 +136,39 @@
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyPatrollingState.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryScripts\Inventory.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\AWindowController.cs" />
     <Compile Include="Assets\InventoryAsset\Scenes\ExtraScene\InventoryExtraScene\Player\PlayerMovement.cs" />
     <Compile Include="Assets\InventoryAsset\Scenes\SampleScene\AddItemFunctions.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelProperties.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\EnemyShootingController.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Helpers\PoolsHelper.cs" />
     <Compile Include="Assets\SFInventory\Scripts\SFInventoryManager.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowUILayer.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowHistoryEntry.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\AimingThirdPerson.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\ConfirmationPopupController.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\SaveSystem\InventorySaveSystem.cs" />
     <Compile Include="Assets\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\APanelController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\InventoryController.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\PopupExampleWindowController.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\LevelProgressComponent.cs" />
     <Compile Include="Assets\SFInventory\Scripts\SFInventoryCell.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowParaLayer.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\UIFollowComponent.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryItem\InventoryItemScript\ItemInitializerUnityEvent.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
-    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\ObjectPool.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\ItemInventory.cs" />
+    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\UIFrame.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Barking_Dog\Common Scripts\MouseLook.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\UIInventoryItem.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\UIController\UILobby.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\SaveSystem\InventoryData.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\ItemPickUpAble.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyChasingState.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowParaLayer.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\ATransitionComponent.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelProperties.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelPriority.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\APanelController.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\AWindowController.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\UIFrame.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowHistoryEntry.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\AUIScreenController.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\LegacyAnimationScreenTransition.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\UISettings.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\ScreenPropertyInterfaces.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelUILayer.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\ScreenTransitions\SimpleFadeTransition.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowPriority.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\AUILayer.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\ScreenControllerInterfaces.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowProperties.cs" />
-    <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowUILayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

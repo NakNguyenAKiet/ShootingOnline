@@ -12,6 +12,7 @@ namespace ShootingGame
         public LivingEntity LivingEntity;
         public AimingThirdPerson AimingThirdPerson;
         public StarterAssetsInputs StarterAssetsInputs;
+        public InventoryController InventoryController;
         private void Awake()
         {
             if(_instance != null)

@@ -17,6 +17,7 @@ namespace ShootingGame
         [SerializeField] private Animator animator;
         [SerializeField] private Slider healthBar;
         [SerializeField] private LivingEntityType _livingEntityType;
+        [SerializeField] private ItemPickUpAble _dropItem;
         private void Reset()
         {
             animator = GetComponent<Animator>();
@@ -42,8 +43,13 @@ namespace ShootingGame
         {
             animator.SetTrigger("isDying");
             transform.GetComponent<Collider>().enabled = false;
+            
+            if(_dropItem != null && _dropItem.ItemCode != ItemCode.NoItem)
+            {
+                Instantiate(_dropItem, transform);
+            }
 
-            Invoke(nameof(DestroyThis), 4);
+            Invoke(nameof(DestroyThis), 5);
         }
         private void DestroyThis() 
         {

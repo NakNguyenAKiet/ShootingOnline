@@ -3,6 +3,7 @@ using ShootingGame;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 #endif
 
 namespace StarterAssets
@@ -32,11 +33,15 @@ namespace StarterAssets
 			if (!inventoryToggle)
 			{
 				await UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory);
+                Cursor.lockState = CursorLockMode.None;
             }
 			else
 			{
                 await UIFrameManager.Instance.uIFrame.HidePanel(ScreenIds.UIInventory);
+                Cursor.lockState = CursorLockMode.Locked;
             }
+            Cursor.visible = !inventoryToggle;
+            cursorLocked = inventoryToggle;
             inventoryToggle = !inventoryToggle;
         }
         public void OnMove(InputValue value)
@@ -112,8 +117,15 @@ namespace StarterAssets
             this.castSpell_1 = isPressed;
         }
         private void OnApplicationFocus(bool hasFocus)
-		{
-			SetCursorState(cursorLocked);
+        {
+   //         if (!cursorLocked) 
+			//{
+   //             Cursor.lockState = CursorLockMode.None;
+			//}
+			//else
+			//{
+			//	SetCursorState(cursorLocked);
+			//}
 		}
 
 		public void SetCursorState(bool newState)

@@ -34,7 +34,7 @@ namespace ShootingGame
         [SerializeField] private Projectile _spell1Prefab;
         [SerializeField] private float _spell1Energy = 5;
 
-        private Vector3 _mouseWorldPos = Vector3.zero;
+        public Vector3 MouseWorldPos = Vector3.zero;
         private Vector3 _aimTargetPos;
         private Vector3 _aimDir;
         private Vector2 _centerScreen;
@@ -76,10 +76,10 @@ namespace ShootingGame
             if (_starterAssetsInputs.shoot && _energy >= _curWeponEnergy)
             {
                 _energy -= _curWeponEnergy;
-                Vector3 _bulletDir = (_mouseWorldPos - _bulletSpawner.position).normalized;
+                Vector3 _bulletDir = (MouseWorldPos - _bulletSpawner.position).normalized;
                 _bulletPool.SpawnObjectByDirection(_bulletSpawner, Quaternion.LookRotation(_bulletDir));
 
-                VisualEffect Vfx = Instantiate(HitVFX, _mouseWorldPos, Quaternion.identity);
+                VisualEffect Vfx = Instantiate(HitVFX, MouseWorldPos, Quaternion.identity);
 
                 FlameVFX.Play();
                 _starterAssetsInputs.shoot = false;
@@ -90,7 +90,7 @@ namespace ShootingGame
                 _animator.SetTrigger("Spell1");
                 _starterAssetsInputs.castSpell_1 = false;
                 _energy -= _spell1Energy;
-                Vector3 _bulletDir2 = (_mouseWorldPos - _bulletSpawner.position).normalized;
+                Vector3 _bulletDir2 = (MouseWorldPos - _bulletSpawner.position).normalized;
                 Projectile spell =  Instantiate(_spell1Prefab);
                 spell.SetDestination(_bulletSpawner.position, _bulletDir2);
             }
@@ -100,8 +100,8 @@ namespace ShootingGame
             _ray = Camera.main.ScreenPointToRay(_centerScreen);
             if (Physics.Raycast(_ray, out RaycastHit hitInfo, 999f, _aimLayerMask))
             {
-                _mouseWorldPos = hitInfo.point;
-                targetTransform.position = _mouseWorldPos;
+                MouseWorldPos = hitInfo.point;
+                targetTransform.position = MouseWorldPos;
             }
         }
 
@@ -114,7 +114,7 @@ namespace ShootingGame
                 _thirdPersonController.SetSensitivity(_aimSensitivity);
                 _thirdPersonController.SetRotateOnMove(false);
                 //look to aim
-                _aimTargetPos = _mouseWorldPos;
+                _aimTargetPos = MouseWorldPos;
                 _aimTargetPos.y = transform.position.y;
                 _aimDir = (_aimTargetPos - transform.position).normalized;
                 transform.forward = Vector3.Lerp(transform.forward, _aimDir, Time.deltaTime * 20f);
