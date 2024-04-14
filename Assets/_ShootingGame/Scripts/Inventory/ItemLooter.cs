@@ -7,7 +7,6 @@ namespace ShootingGame
     public class ItemLooter : MonoBehaviour
     {
         [SerializeField] private Rigidbody _rigidbody;
-        [SerializeField] private SphereCollider _sphereCollider;
         [SerializeField] private InventoryController _inventory;
 
         private void OnTriggerEnter(Collider other)

@@ -31,8 +31,8 @@ namespace ShootingGame
         [SerializeField] private PoolsHelper _bulletPool;
         [SerializeField] private float _energy;
         [SerializeField] private float _curWeponEnergy = 1;
-        [SerializeField] private Projectile _spell1Prefab;
-        [SerializeField] private float _spell1Energy = 5;
+        [SerializeField] private List<Projectile> _spellPrefabs;
+        [SerializeField] private List<float> _spellEnergys = new() {4,6,10};
 
         public Vector3 MouseWorldPos = Vector3.zero;
         private Vector3 _aimTargetPos;
@@ -43,7 +43,7 @@ namespace ShootingGame
         private string _idAim = "Aim";
         private float _aimRigWeight = 0;
 
-        public float MaxEnergy = 8;
+        public float MaxEnergy = 10;
 
         private void Awake()
         {
@@ -73,26 +73,44 @@ namespace ShootingGame
 
         private void ShootingCheck()
         {
-            if (_starterAssetsInputs.shoot && _energy >= _curWeponEnergy)
+            if (_starterAssetsInputs.aim)
             {
-                _energy -= _curWeponEnergy;
-                Vector3 _bulletDir = (MouseWorldPos - _bulletSpawner.position).normalized;
-                _bulletPool.SpawnObjectByDirection(_bulletSpawner, Quaternion.LookRotation(_bulletDir));
+                if (_starterAssetsInputs.shoot && _energy >= _curWeponEnergy)
+                {
+                    _energy -= _curWeponEnergy;
+                    Vector3 _bulletDir = (MouseWorldPos - _bulletSpawner.position).normalized;
+                    _bulletPool.SpawnObjectByDirection(_bulletSpawner, Quaternion.LookRotation(_bulletDir));
 
-                VisualEffect Vfx = Instantiate(HitVFX, MouseWorldPos, Quaternion.identity);
+                    VisualEffect Vfx = Instantiate(HitVFX, MouseWorldPos, Quaternion.identity);
 
-                FlameVFX.Play();
-                _starterAssetsInputs.shoot = false;
+                    FlameVFX.Play();
+                    _starterAssetsInputs.shoot = false;
+                }
+
+                if (Input.GetKeyDown(KeyCode.Q) && _energy >= _spellEnergys[0])
+                {
+                    CastSpell(0);
+                }
+                if (Input.GetKeyDown(KeyCode.E) && _energy >= _spellEnergys[1])
+                {
+                    CastSpell(1);
+                }
+                if (Input.GetKeyDown(KeyCode.R) && _energy >= _spellEnergys[2])
+                {
+                    CastSpell(2);
+                }
             }
-
-            if (_starterAssetsInputs.castSpell_1 && _energy >= _spell1Energy)
+        }
+        private void CastSpell(int index)
+        {
+            ItemInventory item = PlayerController.Instance.InventoryController.EquipmentSpells[index];
+            if (item != null && item.ItemProfile != null)
             {
-                _animator.SetTrigger("Spell1");
-                _starterAssetsInputs.castSpell_1 = false;
-                _energy -= _spell1Energy;
-                Vector3 _bulletDir2 = (MouseWorldPos - _bulletSpawner.position).normalized;
-                Projectile spell =  Instantiate(_spell1Prefab);
-                spell.SetDestination(_bulletSpawner.position, _bulletDir2);
+                _animator.SetTrigger("Fire");
+                _energy -= _spellEnergys[index];
+                Vector3 dir = (MouseWorldPos - _spellCasting.position).normalized;
+                Projectile spell = Instantiate(item.ItemProfile.Prefab).GetComponent<Projectile>();
+                spell.SetDestination(_bulletSpawner.position, dir);
             }
         }
         private void GetMouseWorldPos()

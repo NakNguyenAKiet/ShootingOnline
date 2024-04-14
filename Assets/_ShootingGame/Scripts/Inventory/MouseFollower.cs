@@ -32,22 +32,12 @@ namespace ShootingGame
                     cur = parentGameObject;
                 }
             }
-            Debug.Log("Parent GameObject: " + transform.parent.transform.parent.transform.parent.gameObject);
-            if (parentGameObject != null)
-            {
-                // Đã tìm thấy GameObject cha bạn đang tìm kiếm
-            }
-            else
-            {
-                // Không tìm thấy cha mong muốn
-                Debug.Log("Không tìm thấy cha mong muốn.");
-            }
             item = GetComponentInChildren<UIInventoryItem>();
         }
 
-        public void SetData(Sprite sprite, int quantity)
+        public void SetData(ItemInventory itemInventory)
         {
-            //item.SetData(sprite, quantity);
+            item.SetData(itemInventory);
         }
         void Update()
         {
@@ -60,10 +50,8 @@ namespace ShootingGame
                 transform.position = canvas.transform.TransformPoint(position);
             }
         }
-
         public void Toggle(bool val)
         {
-            Debug.Log($"Item toggled {val}");
             gameObject.SetActive(val);
         }
     }

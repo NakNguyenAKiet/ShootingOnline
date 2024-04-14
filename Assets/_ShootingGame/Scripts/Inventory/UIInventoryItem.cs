@@ -10,32 +10,43 @@ using UnityEngine.UI;
 
 namespace ShootingGame
 {
-    public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IDragHandler, IEndDragHandler, IBeginDragHandler
+    public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IDragHandler, IEndDragHandler, IBeginDragHandler, IDropHandler
     {
         [SerializeField] private Image _itemImage;
         [SerializeField] private GameObject _selectedImage;
         [SerializeField] private TextMeshProUGUI _itemCount;
-        [SerializeField] private UIInventory UIInventory;
-        [SerializeField] private ItemInventory itemInventory;
+        [SerializeField] private UIInventory _uIInventory;
 
+        public ItemInventory ItemInventory;
+
+        private void Awake()
+        {
+            ReSetData();
+        }
         public void SetData(ItemInventory itemInventory)
         {
+            if(itemInventory == null || itemInventory.ItemProfile.ItemCode == ItemCode.NoItem) 
+            {
+                ReSetData();
+                return;
+            }
             _itemImage.gameObject.SetActive(true);
-            this.itemInventory = itemInventory;
+            this.ItemInventory = itemInventory;
+
+            if(itemInventory.ItemProfile.Image != null)
             _itemImage.sprite = itemInventory.ItemProfile.Image;
             _itemCount.text = itemInventory.ItemCount.ToString();
         }
         public void SetUIInventory(UIInventory uIInventory)
         {
-            UIInventory = uIInventory;
+            _uIInventory = uIInventory;
         }
         public void ReSetData()
         {
             SelectedItem(false);
-            _itemImage.sprite=null;
             _itemImage.gameObject.SetActive(false);
             _itemCount.text = "";
-            itemInventory = null;
+            ItemInventory = null;
         }
         public void SelectedItem(bool isOn)
         {
@@ -43,35 +54,52 @@ namespace ShootingGame
         }
         public void OnDrag(PointerEventData eventData)
         {
-            Vector3 MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            MousePos.z = 0;
-            _itemImage.transform.position = MousePos;
+            return;
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            Debug.Log("OnEndDrag");
+            if (ItemInventory != null && ItemInventory.ItemProfile.ItemCode == ItemCode.NoItem) return;
+
+            _uIInventory.MouseFollower.Toggle(false);
+
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
-
-            if(UIInventory.CurUIInventoryItem != null)
+            if (eventData.button == PointerEventData.InputButton.Right)
             {
-                UIInventory.CurUIInventoryItem.SelectedItem(false);
+                _uIInventory.UpdateEquipmentSpells(ItemInventory);
             }
-            UIInventory.CurUIInventoryItem = this;
+            if (_uIInventory.CurUIInventoryItem != null)
+            {
+                _uIInventory.CurUIInventoryItem.SelectedItem(false);
+            }
+            _uIInventory.CurUIInventoryItem = this;
             SelectedItem(true);
 
-            if(itemInventory != null)
+            if(ItemInventory != null)
             {
-                UIInventory.UIItemDetail.SetData(itemInventory);
+                _uIInventory.UIItemDetail.SetData(ItemInventory);
             }
         }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
-            Debug.Log("OnBeginDrag");
+            if (ItemInventory != null && ItemInventory.ItemProfile.ItemCode == ItemCode.NoItem) return;
+
+            _uIInventory.MouseFollower.Toggle(true);
+            _uIInventory.MouseFollower.SetData(ItemInventory);
+        }
+
+        public void OnDrop(PointerEventData eventData)
+        {
+            if (eventData.pointerDrag.gameObject.TryGetComponent<UIInventoryItem>(out var item))
+            {
+                ItemInventory temp = ItemInventory;
+                SetData(item.ItemInventory);
+                item.SetData(temp);
+            }
         }
     }
 }

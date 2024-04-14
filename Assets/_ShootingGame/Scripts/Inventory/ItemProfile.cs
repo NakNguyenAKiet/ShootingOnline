@@ -11,13 +11,16 @@ namespace ShootingGame
     public enum ItemCode
     {
         NoItem,
-        Spell_1
+        BluePower,
+        FireBall
     }
     public enum ItemType
     {
         NoType,
         Resource,
-        Skill
+        Skill1,
+        Skill2,
+        Skill3,
     }
     [CreateAssetMenu(fileName = "ItemProfileSO", menuName = "SO/ItemProfile")]
     public class ItemProfile: ScriptableObject
@@ -28,5 +31,6 @@ namespace ShootingGame
         public string ItemName;
         public string Description;
         public int DefaultMaxStack;
+        public Transform Prefab;
     }
 }

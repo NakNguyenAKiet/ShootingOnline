@@ -111,7 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664c72664b313db499138e54bcfbb3ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragCell: {fileID: 5930470939577692774, guid: 3abc9f6b7bf09bb4781d795ea5649968, type: 3}
+  dragCell: {fileID: 5930470939577692774, guid: 3abc9f6b7bf09bb4781d795ea5649968,
+    type: 3}
 --- !u!114 &4022105377713732829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,5 +249,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 5
   height: 9
-  inventoryCell: {fileID: 5930470939577692774, guid: eb647f7260783d64287a752e7dfbed7f, type: 3}
+  inventoryCell: {fileID: 5930470939577692774, guid: eb647f7260783d64287a752e7dfbed7f,
+    type: 3}
   inventoryManager: {fileID: 4022105377713732831}

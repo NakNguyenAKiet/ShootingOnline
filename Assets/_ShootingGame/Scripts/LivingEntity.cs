@@ -1,6 +1,7 @@
 using deVoid.Utils;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,12 +19,14 @@ namespace ShootingGame
         [SerializeField] private Slider healthBar;
         [SerializeField] private LivingEntityType _livingEntityType;
         [SerializeField] private ItemPickUpAble _dropItem;
+        [SerializeField] private ParticleSystem _particleOndead;
+        [SerializeField] private GameObject _model;
         private void Reset()
         {
             animator = GetComponent<Animator>();
             healthBar.value = HP;
         }
-        public void TakeDame(int dame)
+        public async Task<Task> TakeDame(int dame)
         {
             HP -= dame;
             if (HP <= 0)
@@ -38,6 +41,7 @@ namespace ShootingGame
             {
                 healthBar.value = HP;
             }
+            return Task.CompletedTask;
         }
         private void Die()
         {
@@ -47,13 +51,14 @@ namespace ShootingGame
             if(_dropItem != null && _dropItem.ItemCode != ItemCode.NoItem)
             {
                 Instantiate(_dropItem, transform);
+                Instantiate(_particleOndead, transform);
             }
 
             Invoke(nameof(DestroyThis), 5);
         }
         private void DestroyThis() 
         {
-            Destroy(gameObject);
+            _model.SetActive(false);
         }
         public void SetHealthBar(Slider slider)
         {

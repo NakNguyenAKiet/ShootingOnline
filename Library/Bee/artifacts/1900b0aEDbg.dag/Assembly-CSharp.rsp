@@ -480,6 +480,8 @@
 "Assets/uiframework_examples-master/Assets/UIFrameworkExamples/Scripts/Widgets/LevelProgressComponent.cs"
 "Assets/uiframework_examples-master/Assets/UIFrameworkExamples/Scripts/Widgets/NavigationPanelButton.cs"
 "Assets/uiframework_examples-master/Assets/UIFrameworkExamples/Scripts/Widgets/UIFollowComponent.cs"
+"Assets/UNI VFX/Common/Scripts/UNI_SimpleCameraController.cs"
+"Assets/UNI VFX/Common/Scripts/VFX_UNI_Rotate.cs"
 "Assets/_ShootingGame/Scripts/AimingThirdPerson.cs"
 "Assets/_ShootingGame/Scripts/EnemyShootingController.cs"
 "Assets/_ShootingGame/Scripts/Helpers/BaseSingleton.cs"
@@ -493,6 +495,7 @@
 "Assets/_ShootingGame/Scripts/Inventory/ItemPickUpAble.cs"
 "Assets/_ShootingGame/Scripts/Inventory/ItemProfile.cs"
 "Assets/_ShootingGame/Scripts/Inventory/MouseFollower.cs"
+"Assets/_ShootingGame/Scripts/Inventory/SpellEquipment.cs"
 "Assets/_ShootingGame/Scripts/Inventory/UIInventoryItem.cs"
 "Assets/_ShootingGame/Scripts/Inventory/UIItemDetail.cs"
 "Assets/_ShootingGame/Scripts/LivingEntity.cs"
@@ -508,6 +511,7 @@
 "Assets/_ShootingGame/Scripts/UIController/UIInventory.cs"
 "Assets/_ShootingGame/Scripts/UIController/UILobby.cs"
 "Assets/_ShootingGame/Scripts/UIFrameManager.cs"
+"Assets/_ShootingGame/VFX/Play_UNI_VFX.cs"
 -langversion:9.0
 
 /deterministic

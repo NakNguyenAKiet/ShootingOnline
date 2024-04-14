@@ -17,6 +17,8 @@ namespace StarterAssets
 		public bool aim = false;
 		public bool shoot = false;
 		public bool castSpell_1 = false;
+		public bool castSpell_2 = false;
+		public bool castSpell_3 = false;
 		public bool inventoryToggle = false;
 		public bool sprint;
 
@@ -79,6 +81,15 @@ namespace StarterAssets
         {
             CastSpell_1Input(value.isPressed);
         }
+		public void OnCastSpell_2(InputValue value)
+        {
+            CastSpell_2Input(value.isPressed);
+        }
+		public void OnCastSpell_3(InputValue value)
+        {
+            CastSpell_3Input(value.isPressed);
+        }
+
 #endif
 
 
@@ -115,6 +126,16 @@ namespace StarterAssets
 		{
             if (!aim) return;
             this.castSpell_1 = isPressed;
+        }
+		public void CastSpell_2Input(bool isPressed)
+		{
+            if (!aim) return;
+            this.castSpell_2 = isPressed;
+        }
+		public void CastSpell_3Input(bool isPressed)
+		{
+            if (!aim) return;
+            this.castSpell_3 = isPressed;
         }
         private void OnApplicationFocus(bool hasFocus)
         {

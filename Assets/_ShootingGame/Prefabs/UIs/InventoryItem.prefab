@@ -399,8 +399,8 @@ MonoBehaviour:
   _itemImage: {fileID: 6821089250419150053}
   _selectedImage: {fileID: 7574931679281325670}
   _itemCount: {fileID: 6544020374333901003}
-  UIInventory: {fileID: 0}
-  itemInventory:
+  _uIInventory: {fileID: 0}
+  ItemInventory:
     ItemProfile: {fileID: 0}
     ItemCount: 0
     MaxStack: 7

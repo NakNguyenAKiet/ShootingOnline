@@ -637,6 +637,9 @@ MonoBehaviour:
   animator: {fileID: 813283390103037946}
   healthBar: {fileID: 1277957238}
   _livingEntityType: 0
+  _dropItem: {fileID: 0}
+  _particleOndead: {fileID: 0}
+  _model: {fileID: 814683770481415081}
 --- !u!114 &2121336533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,6 +982,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 95565753606369354, guid: c266c61b42ce56a4ca7e9190ef1209e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c266c61b42ce56a4ca7e9190ef1209e3, type: 3}
+--- !u!1 &814683770481415081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1981860918171908, guid: c266c61b42ce56a4ca7e9190ef1209e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 813283390690658989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &817810295504576481 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4555062712112460, guid: c266c61b42ce56a4ca7e9190ef1209e3,

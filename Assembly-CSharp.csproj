@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\StartWindowController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Inventory\SpellEquipment.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\PlayerController.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyFiringRifleState.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Core\ScreenPropertyInterfaces.cs" />
@@ -169,6 +170,9 @@
     <Compile Include="Assets\InventoryAsset\Inventory\SaveSystem\InventoryData.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Inventory\ItemPickUpAble.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyChasingState.cs" />
+    <Compile Include="Assets\UNI VFX\Common\Scripts\VFX_UNI_Rotate.cs" />
+    <Compile Include="Assets\UNI VFX\Common\Scripts\UNI_SimpleCameraController.cs" />
+    <Compile Include="Assets\_ShootingGame\VFX\Play_UNI_VFX.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -208,6 +212,7 @@
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Fire\Procedural fire\Shaders\FireSphere.shader" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -218,6 +223,7 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Fire\Procedural fire\Demo scene\Readme.txt" />
     <None Include="Assets\Barking_Dog\Readme_Please.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>

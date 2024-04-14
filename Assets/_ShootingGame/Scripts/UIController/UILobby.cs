@@ -20,6 +20,7 @@ namespace ShootingGame
         [SerializeField] private Transform _crossHair;
         [SerializeField] private Button _menuButton;
         [SerializeField] private Button _dimButton;
+        [SerializeField] private List<Image> _spellImages;
         protected async override void Awake()
         {
             base.Awake();
@@ -29,6 +30,7 @@ namespace ShootingGame
             Signals.Get<TurnOnCrossHair>().AddListener(TurnOnCrossHair);
             Signals.Get<UpdateHP>().AddListener(UpdateHP);
             Signals.Get<UpdateEnergy>().AddListener(UpdateEnergy);
+            Signals.Get<SetSpellEquipmentUI>().AddListener(UpdateSpellEquipmentUI);
         }
         private async void Start()
         {
@@ -36,6 +38,21 @@ namespace ShootingGame
             await UniTask.WaitUntil(() => PlayerController.Instance.LivingEntity != null);
             PlayerController.Instance.LivingEntity.SetHealthBar(_hPBar);
             _energyBar.maxValue = PlayerController.Instance.AimingThirdPerson.MaxEnergy;
+        }
+        private void UpdateSpellEquipmentUI(List<ItemInventory> itemInventories)
+        {
+            for(int i = 0; i < itemInventories.Count; i++)
+            {
+                if (itemInventories[i] == null || itemInventories[i].ItemProfile == null || itemInventories[i].ItemProfile.Image == null)
+                {
+                    _spellImages[i].gameObject.SetActive(false);
+                }
+                else
+                {
+                    _spellImages[i].sprite = itemInventories[i].ItemProfile.Image;
+                    _spellImages[i].gameObject.SetActive(true);
+                }
+            }
         }
         private void TurnOnCrossHair(bool isOn)
         {
@@ -54,7 +71,7 @@ namespace ShootingGame
             Signals.Get<TurnOnCrossHair>().RemoveListener(TurnOnCrossHair);
             Signals.Get<UpdateEnergy>().RemoveListener(UpdateEnergy);
             Signals.Get<UpdateHP>().RemoveListener(UpdateHP);
-
+            Signals.Get<SetSpellEquipmentUI>().RemoveListener(UpdateSpellEquipmentUI);
         }
     }
 }

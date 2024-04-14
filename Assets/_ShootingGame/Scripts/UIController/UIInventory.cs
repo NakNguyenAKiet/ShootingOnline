@@ -13,19 +13,29 @@ namespace ShootingGame
 {
     public class UIInventory : APanelController
     {
-        [SerializeField] private UIInventoryItem inventoryItemPrefab;
-        [SerializeField] private Transform _contentPanel;
         public UIItemDetail UIItemDetail;
         public UIInventoryItem CurUIInventoryItem;
+        public MouseFollower MouseFollower;
+        public List<ItemInventory> EquipmentSpells = new();
+        public List<UIInventoryItem> EquipmentSpellsUIs = new();
+
+        [SerializeField] private UIInventoryItem inventoryItemPrefab;
+        [SerializeField] private Transform _contentPanel;
+
         private bool HadInitial = false;
 
-        private List<UIInventoryItem> inventoryItems = new();
-
-        private async void Start()
+        private List<UIInventoryItem> inventoryItems = new() { };
+        protected override async void Awake()
+        {
+            base.Awake();
+            await UniTask.WaitForSeconds(1);
+            await InitialListItem(PlayerController.Instance.InventoryController.MaxSlot);
+        }
+        private void Start()
         {
             PlayerController.Instance.InventoryController.SetUIInventory(this);
-            await InitialListItem(PlayerController.Instance.InventoryController.MaxSlot);
             LoadItems();
+            MouseFollower.Toggle(false);
         }
         private void OnEnable()
         {
@@ -33,6 +43,28 @@ namespace ShootingGame
             {
                 LoadItems();
             }
+        }
+        public void UpdateEquipmentSpells(ItemInventory itemInventory)
+        {
+            switch (itemInventory.ItemProfile.ItemType)
+            {
+                case ItemType.Skill1:
+                    EquipmentSpellsUIs[0].SetData(itemInventory);
+                break;
+                case ItemType.Skill2:
+                    EquipmentSpellsUIs[1].SetData(itemInventory);
+                    break;
+                case ItemType.Skill3:
+                    EquipmentSpellsUIs[2].SetData(itemInventory);
+                    break;
+            }
+            for(int i = 0; i < EquipmentSpellsUIs.Count; i++)
+            {
+
+                EquipmentSpells[i] = EquipmentSpellsUIs[i].ItemInventory;
+            }
+
+            PlayerController.Instance.InventoryController.SetSpellEquipment(EquipmentSpells);
         }
         private Task InitialListItem(int quantity)
         {
@@ -51,7 +83,7 @@ namespace ShootingGame
             {
                 item.ReSetData();
             }
-            var listItemInventory = PlayerController.Instance.InventoryController.Items;
+            var listItemInventory = PlayerController.Instance.InventoryController.ItemInventories;
             for (int i = 0;i< listItemInventory.Count; i++)
             {
                 inventoryItems[i].SetData(listItemInventory[i]);

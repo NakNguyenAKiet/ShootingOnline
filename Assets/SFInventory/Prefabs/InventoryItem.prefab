@@ -189,6 +189,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 5930470940397530188}
   itemsCountText: {fileID: 2092139077}
+  typeMatch: 0
+  cellItemType: 0
+  dropItemOnAdd: 1
   item: {fileID: 0}
   itemsCount: 0
   inventoryManager: {fileID: 0}

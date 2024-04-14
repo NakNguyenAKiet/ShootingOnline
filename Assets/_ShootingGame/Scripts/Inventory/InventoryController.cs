@@ -1,3 +1,4 @@
+using deVoid.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,19 @@ namespace ShootingGame
     {
         public int MaxSlot;
 
-        public List<ItemInventory> Items = new();
+        public List<ItemInventory> ItemInventories = new();
+        public List<ItemInventory> EquipmentSpells = new();
         [SerializeField] private ItemProfile[] profiles;
         [SerializeField] private UIInventory uIInventory;
         // Start is called before the first frame update
         private void Awake()
         {
             profiles = Resources.LoadAll<ItemProfile>("ItemProfiles");
+        }
+        public void SetSpellEquipment(List<ItemInventory> EquipmentSpells) 
+        {
+            this.EquipmentSpells = EquipmentSpells;
+            Signals.Get<SetSpellEquipmentUI>().Dispatch(EquipmentSpells);
         }
         public virtual bool AddItem(ItemCode itemCode, int addCount)
         {
@@ -31,7 +38,7 @@ namespace ShootingGame
         }
         public virtual ItemInventory GetItemByCode(ItemCode itemCode)
         {
-            ItemInventory itemInventory = Items.Find((x) => x.ItemProfile.ItemCode == itemCode);
+            ItemInventory itemInventory = ItemInventories.Find((x) => x.ItemProfile.ItemCode == itemCode);
 
             if (itemInventory == null) itemInventory = this.AddEmptyProfile(itemCode);
 
@@ -47,7 +54,7 @@ namespace ShootingGame
                     ItemProfile = profile,
                     MaxStack = profile.DefaultMaxStack
                 };
-                this.Items.Add(itemInventory);
+                this.ItemInventories.Add(itemInventory);
                 return itemInventory;
             }
             return null;

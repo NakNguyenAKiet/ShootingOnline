@@ -69,6 +69,24 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "CastSpell_2",
+                    "type": "Button",
+                    "id": "3001f5a7-eac9-4f6a-8bb8-9f4e79f47973",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CastSpell_3",
+                    "type": "Button",
+                    "id": "1fa5d974-0eed-4267-926e-5ae260c92eba",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "InventoryToggle",
                     "type": "Button",
                     "id": "b506ce06-6272-4925-8626-0e73e4fc130c",
@@ -280,7 +298,7 @@
                 {
                     "name": "",
                     "id": "ec994b79-6873-4e82-b910-5f4c58948a7a",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
@@ -296,6 +314,28 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "InventoryToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a5bec56-a0a1-46d8-a507-2d8017f68ea3",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "CastSpell_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6eac24f-1e3a-4b26-926b-3e1e29b6007e",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "CastSpell_3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

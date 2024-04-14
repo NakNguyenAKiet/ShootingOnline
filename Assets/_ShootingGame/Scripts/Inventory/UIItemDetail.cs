@@ -11,6 +11,7 @@ namespace ShootingGame {
         [SerializeField] private Image image;
         [SerializeField] private TextMeshProUGUI detail;
         [SerializeField] private TextMeshProUGUI itemName;
+        [SerializeField] private ItemInventory itemInventory;
 
         private void OnEnable()
         {
@@ -19,9 +20,10 @@ namespace ShootingGame {
         public void SetData(ItemInventory itemInventory)
         {
             image.gameObject.SetActive(true);
+            this.itemInventory = itemInventory;
             image.sprite = itemInventory.ItemProfile.Image;
             this.detail.text = itemInventory.ItemProfile.Description;
-            this.itemName.text = itemInventory.ItemProfile.name;
+            this.itemName.text = itemInventory.ItemProfile.ItemName;
         }
         public void ReSetData()
         {
