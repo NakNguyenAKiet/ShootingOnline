@@ -25,7 +25,7 @@ namespace ShootingGame
         }
         public void SetData(ItemInventory itemInventory)
         {
-            if(itemInventory == null || itemInventory.ItemProfile.ItemCode == ItemCode.NoItem) 
+            if(itemInventory == null || itemInventory.ItemProfile==null || itemInventory.ItemProfile.ItemCode == ItemCode.NoItem) 
             {
                 ReSetData();
                 return;

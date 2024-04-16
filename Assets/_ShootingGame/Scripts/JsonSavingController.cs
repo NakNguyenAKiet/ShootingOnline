@@ -21,8 +21,9 @@ namespace ShootingGame
             writer.Write(json);
             writer.Close();
         }
-        public InventoryData GetListItemInventoryData()
+        public InventoryData GetInventoryData()
         {
+            Debug.Log("Get InventoryData at: " + _persistentpathInventory);
             InventoryData InventoryData = null;
             try
             {

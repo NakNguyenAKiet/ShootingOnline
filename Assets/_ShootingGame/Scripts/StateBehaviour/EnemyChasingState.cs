@@ -9,6 +9,7 @@ namespace ShootingGame
     {
         NavMeshAgent navMeshAgent;
         Transform player;
+        EnemyShootingController EnemyShootingController;
         private void Awake()
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -16,19 +17,20 @@ namespace ShootingGame
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             navMeshAgent = animator.GetComponent<NavMeshAgent>();
-            navMeshAgent.speed = 3.5f;
+            EnemyShootingController = animator.GetComponent<EnemyShootingController>();
+            navMeshAgent.speed = EnemyShootingController.Speed;
         }
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             navMeshAgent.SetDestination(player.position);
 
             float distanceToPlayer = Vector3.Distance(animator.transform.position, player.position);
-            if (distanceToPlayer > 15)
+            if (distanceToPlayer > EnemyShootingController.ChasingRange + 5)
             {
                 animator.SetBool("isChasing", false);
             }
 
-            if (distanceToPlayer < 8)
+            if (distanceToPlayer < EnemyShootingController.AttackRange)
             {
                 animator.SetBool("isAttacking", true);
             }

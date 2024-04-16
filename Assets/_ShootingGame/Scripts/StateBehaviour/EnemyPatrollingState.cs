@@ -7,36 +7,27 @@ namespace ShootingGame
     public class EnemyPatrollingState : StateMachineBehaviour
     {
         NavMeshAgent navMeshAgent;
-        List<Transform> movePoints = new List<Transform>();
-        Transform movePoint;
         Transform player;
         Vector3 rootPosition;
         bool isSetRootPosition = false;
         float timer = 0;
-        [SerializeField] float wanderRadius = 10f;
-        [SerializeField] float chasingRange = 15f;
+        EnemyShootingController enemyShootingController;
         private void Awake()
         {
-            movePoint = GameObject.Find("MovePoints").transform;
             player = GameObject.FindGameObjectWithTag("Player").transform;
         }
         //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            if(!isSetRootPosition)
+            enemyShootingController = animator.GetComponent<EnemyShootingController>();
+            if (!isSetRootPosition)
             {
                 rootPosition = animator.transform.position;
                 isSetRootPosition = true;
             }
             navMeshAgent = animator.GetComponent<NavMeshAgent>();
             navMeshAgent.speed = 1.5f;
-            timer = 0;
-            //movePoints.Clear();
-            //foreach (Transform t in movePoint)
-            //{
-            //    movePoints.Add(t);
-            //}
-            //navMeshAgent.SetDestination(movePoints[Random.Range(0, movePoints.Count)].position);
+            timer = 0;;
             SetRandomDestination();
         }
 
@@ -54,7 +45,7 @@ namespace ShootingGame
             }
 
             float distanceToPlayer = Vector3.Distance(animator.transform.position, player.position);
-            if (distanceToPlayer < chasingRange)
+            if (distanceToPlayer < enemyShootingController.ChasingRange)
             {
                 animator.SetBool("isChasing", true);
             }
@@ -67,10 +58,10 @@ namespace ShootingGame
         }
         void SetRandomDestination()
         {
-            Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
+            Vector3 randomDirection = Random.insideUnitSphere * enemyShootingController.WanderRadius;
             randomDirection += rootPosition;
             NavMeshHit navHit;
-            NavMesh.SamplePosition(randomDirection, out navHit, wanderRadius, NavMesh.AllAreas);
+            NavMesh.SamplePosition(randomDirection, out navHit, enemyShootingController.WanderRadius, NavMesh.AllAreas);
             navMeshAgent.SetDestination(navHit.position);
         }
     }

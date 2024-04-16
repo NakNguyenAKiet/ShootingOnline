@@ -22,7 +22,7 @@ namespace ShootingGame {
             image.gameObject.SetActive(true);
             this.itemInventory = itemInventory;
             image.sprite = itemInventory.ItemProfile.Image;
-            this.detail.text = itemInventory.ItemProfile.Description;
+            this.detail.text = $"{itemInventory.ItemProfile.Description} \n Type: {itemInventory.ItemProfile.ItemType}";
             this.itemName.text = itemInventory.ItemProfile.ItemName;
         }
         public void ReSetData()

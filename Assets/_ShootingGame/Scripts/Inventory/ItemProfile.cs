@@ -23,6 +23,7 @@ namespace ShootingGame
         Skill3,
     }
     [CreateAssetMenu(fileName = "ItemProfileSO", menuName = "SO/ItemProfile")]
+    [Serializable]
     public class ItemProfile: ScriptableObject
     {
         public ItemCode ItemCode = ItemCode.NoItem;

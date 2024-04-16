@@ -13,6 +13,8 @@ namespace ShootingGame
         public AimingThirdPerson AimingThirdPerson;
         public StarterAssetsInputs StarterAssetsInputs;
         public InventoryController InventoryController;
+        public JsonSavingController JsonSavingController;
+        public SoundFXManager SoundFXManager;
         private void Awake()
         {
             if(_instance != null)
@@ -23,16 +25,17 @@ namespace ShootingGame
             {
                 _instance = this;
             }
+            JsonSavingController = new JsonSavingController();
+            JsonSavingController.SetPath();
         }
-        public void SetUpAwake()
-        {
-
-        }
+        
         private void Reset()
         {
             LivingEntity = GetComponent<LivingEntity>();
             AimingThirdPerson = GetComponent<AimingThirdPerson>();
             StarterAssetsInputs = GetComponent<StarterAssetsInputs>();
+            InventoryController = GetComponentInChildren<InventoryController>();
+            SoundFXManager = GetComponent<SoundFXManager>();
         }
     }
 }

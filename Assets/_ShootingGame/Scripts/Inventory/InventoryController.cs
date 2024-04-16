@@ -1,4 +1,6 @@
+using Cysharp.Threading.Tasks;
 using deVoid.Utils;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,12 +8,17 @@ using UnityEngine;
 
 namespace ShootingGame
 {
+    [Serializable]
+    public class InventoryData
+    {
+        public List<ItemInventory> ItemInventories = new();
+        public List<ItemInventory> EquipmentSpells = new();
+    }
     public class InventoryController : MonoBehaviour
     {
         public int MaxSlot;
 
-        public List<ItemInventory> ItemInventories = new();
-        public List<ItemInventory> EquipmentSpells = new();
+        public InventoryData InventoryData;
         [SerializeField] private ItemProfile[] profiles;
         [SerializeField] private UIInventory uIInventory;
         // Start is called before the first frame update
@@ -19,9 +26,19 @@ namespace ShootingGame
         {
             profiles = Resources.LoadAll<ItemProfile>("ItemProfiles");
         }
+        private async void Start()
+        {
+            InventoryData inventoryData = PlayerController.Instance.JsonSavingController.GetInventoryData();
+            if(inventoryData != null)
+            {
+                InventoryData = inventoryData;
+                await UniTask.WaitForSeconds(0.5f);
+                Signals.Get<SetSpellEquipmentUI>().Dispatch(InventoryData.EquipmentSpells);
+            }
+        }
         public void SetSpellEquipment(List<ItemInventory> EquipmentSpells) 
         {
-            this.EquipmentSpells = EquipmentSpells;
+            this.InventoryData.EquipmentSpells = EquipmentSpells;
             Signals.Get<SetSpellEquipmentUI>().Dispatch(EquipmentSpells);
         }
         public virtual bool AddItem(ItemCode itemCode, int addCount)
@@ -38,7 +55,7 @@ namespace ShootingGame
         }
         public virtual ItemInventory GetItemByCode(ItemCode itemCode)
         {
-            ItemInventory itemInventory = ItemInventories.Find((x) => x.ItemProfile.ItemCode == itemCode);
+            ItemInventory itemInventory = InventoryData.ItemInventories.Find((x) => x.ItemProfile.ItemCode == itemCode);
 
             if (itemInventory == null) itemInventory = this.AddEmptyProfile(itemCode);
 
@@ -54,7 +71,7 @@ namespace ShootingGame
                     ItemProfile = profile,
                     MaxStack = profile.DefaultMaxStack
                 };
-                this.ItemInventories.Add(itemInventory);
+                this.InventoryData.ItemInventories.Add(itemInventory);
                 return itemInventory;
             }
             return null;

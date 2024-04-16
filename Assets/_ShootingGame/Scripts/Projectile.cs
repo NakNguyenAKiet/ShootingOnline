@@ -10,6 +10,7 @@ namespace ShootingGame
         public Rigidbody Rigidbody;
         public float Speed = 50f;
         public int dame = 5;
+        [SerializeField] private EffectType _effectTypeOnHit;
 
         private void Awake()
         {
@@ -29,8 +30,12 @@ namespace ShootingGame
             transform.rotation = Quaternion.LookRotation(targetDir);
             ResetVelocity();
         }
-        private async void OnTriggerEnter(Collider other)
+        protected virtual async void OnTriggerEnter(Collider other)
         {
+            if(_effectTypeOnHit != EffectType.none)
+            {
+                EffectManager.Instance.PlayEffectAtPos(_effectTypeOnHit, other.transform.position + new Vector3(0,1.5f,0));
+            }
             if (other.TryGetComponent(out LivingEntity target))
             {
                 await target.TakeDame(dame);

@@ -130,3 +130,4 @@ MonoBehaviour:
   Rigidbody: {fileID: 4791873505288358064}
   Speed: 200
   dame: 5
+  _effectTypeOnHit: 1

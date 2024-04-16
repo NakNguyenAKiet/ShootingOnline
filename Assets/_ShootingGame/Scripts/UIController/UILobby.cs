@@ -26,11 +26,6 @@ namespace ShootingGame
             base.Awake();
             await UniTask.WaitUntil(() => PlayerController.Instance != null);
             await UniTask.WaitUntil(() => UIFrameManager.Instance != null);
-            _menuButton.onClick.AddListener(async () => await UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory));
-            Signals.Get<TurnOnCrossHair>().AddListener(TurnOnCrossHair);
-            Signals.Get<UpdateHP>().AddListener(UpdateHP);
-            Signals.Get<UpdateEnergy>().AddListener(UpdateEnergy);
-            Signals.Get<SetSpellEquipmentUI>().AddListener(UpdateSpellEquipmentUI);
         }
         private async void Start()
         {
@@ -38,6 +33,15 @@ namespace ShootingGame
             await UniTask.WaitUntil(() => PlayerController.Instance.LivingEntity != null);
             PlayerController.Instance.LivingEntity.SetHealthBar(_hPBar);
             _energyBar.maxValue = PlayerController.Instance.AimingThirdPerson.MaxEnergy;
+        }
+        protected override void AddListeners()
+        {
+            base.AddListeners();
+            //_menuButton.onClick.AddListener(async () => await UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIInventory));
+            Signals.Get<TurnOnCrossHair>().AddListener(TurnOnCrossHair);
+            Signals.Get<UpdateHP>().AddListener(UpdateHP);
+            Signals.Get<UpdateEnergy>().AddListener(UpdateEnergy);
+            Signals.Get<SetSpellEquipmentUI>().AddListener(UpdateSpellEquipmentUI);
         }
         private void UpdateSpellEquipmentUI(List<ItemInventory> itemInventories)
         {
@@ -66,8 +70,10 @@ namespace ShootingGame
         {
             _hPBar.value = value;
         }
-        protected override void OnDestroy()
+        protected override void RemoveListeners()
         {
+            base.RemoveListeners();
+            //_menuButton.onClick.RemoveAllListeners();
             Signals.Get<TurnOnCrossHair>().RemoveListener(TurnOnCrossHair);
             Signals.Get<UpdateEnergy>().RemoveListener(UpdateEnergy);
             Signals.Get<UpdateHP>().RemoveListener(UpdateHP);

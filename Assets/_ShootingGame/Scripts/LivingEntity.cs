@@ -45,6 +45,7 @@ namespace ShootingGame
         }
         private void Die()
         {
+            PlayerController.Instance.SoundFXManager.PlaySoundAtPos(transform.position, SoundType.Electric, 1f);
             animator.SetTrigger("isDying");
             transform.GetComponent<Collider>().enabled = false;
             

@@ -31,7 +31,10 @@ namespace ShootingGame
                 _instance = this;
             }
         }
-
+        private async void Start()
+        {
+            await uIFrame.ShowPanel(ScreenIds.UILoading);
+        }
         public bool HasScreenId(string id)
         {
             return Instance.uIFrame && uIFrame.IsScreenRegistered(id);

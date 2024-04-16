@@ -14,7 +14,6 @@ namespace ShootingGame
             Collider[] colliders = Physics.OverlapSphere(transform.position, skillRangeRadius);
             foreach (Collider collider in colliders)
             {
-                Debug.Log(collider.name);
                 if(collider.gameObject.TryGetComponent<LivingEntity>(out var target))
                 {
                     await target.TakeDame(dame);

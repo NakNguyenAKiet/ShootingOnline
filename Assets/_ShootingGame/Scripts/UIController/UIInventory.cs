@@ -22,24 +22,25 @@ namespace ShootingGame
         [SerializeField] private UIInventoryItem inventoryItemPrefab;
         [SerializeField] private Transform _contentPanel;
 
-        private bool HadInitial = false;
+        [SerializeField] private List<UIInventoryItem> inventoryItems = new() { };
 
-        private List<UIInventoryItem> inventoryItems = new() { };
+        private bool HasInitial = false;
         protected override async void Awake()
         {
             base.Awake();
             await UniTask.WaitForSeconds(1);
             await InitialListItem(PlayerController.Instance.InventoryController.MaxSlot);
+            HasInitial = true;
         }
         private void Start()
         {
             PlayerController.Instance.InventoryController.SetUIInventory(this);
-            LoadItems();
             MouseFollower.Toggle(false);
+            LoadItems();
         }
         private void OnEnable()
         {
-            if(HadInitial)
+            if(HasInitial)
             {
                 LoadItems();
             }
@@ -83,11 +84,19 @@ namespace ShootingGame
             {
                 item.ReSetData();
             }
-            var listItemInventory = PlayerController.Instance.InventoryController.ItemInventories;
-            for (int i = 0;i< listItemInventory.Count; i++)
+            var listItemInventory = PlayerController.Instance.InventoryController.InventoryData.ItemInventories;
+            for (int i = 0; i < listItemInventory.Count; i++)
             {
                 inventoryItems[i].SetData(listItemInventory[i]);
             }
+
+            var listSpellEquipment = PlayerController.Instance.InventoryController.InventoryData.EquipmentSpells;
+            for (int i = 0; i < listSpellEquipment.Count; i++)
+            {
+                EquipmentSpells[i] = listSpellEquipment[i];
+                EquipmentSpellsUIs[i].SetData(EquipmentSpells[i]);
+            }
+
         }
     }
 }

@@ -6,6 +6,7 @@ namespace ShootingGame
     {
         float timer = 0;
         Transform player;
+        EnemyShootingController controller;
         private void Awake()
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -14,6 +15,7 @@ namespace ShootingGame
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             timer = 0;
+            controller = animator.GetComponent<EnemyShootingController>();
         }
 
         // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -26,7 +28,7 @@ namespace ShootingGame
             }
 
             float distanceToPlayer = Vector3.Distance(animator.transform.position, player.position);
-            if (distanceToPlayer < 10)
+            if (distanceToPlayer < controller.ChasingRange)
             {
                 animator.SetBool("isChasing", true);
             }

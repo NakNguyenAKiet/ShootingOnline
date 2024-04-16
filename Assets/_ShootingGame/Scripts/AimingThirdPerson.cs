@@ -77,6 +77,7 @@ namespace ShootingGame
             {
                 if (_starterAssetsInputs.shoot && _energy >= _curWeponEnergy)
                 {
+                    PlayerController.Instance.SoundFXManager.PlaySoundAtPos(transform.position, SoundType.Lazer, 0.5f);
                     _energy -= _curWeponEnergy;
                     Vector3 _bulletDir = (MouseWorldPos - _bulletSpawner.position).normalized;
                     _bulletPool.SpawnObjectByDirection(_bulletSpawner, Quaternion.LookRotation(_bulletDir));
@@ -103,7 +104,7 @@ namespace ShootingGame
         }
         private void CastSpell(int index)
         {
-            ItemInventory item = PlayerController.Instance.InventoryController.EquipmentSpells[index];
+            ItemInventory item = PlayerController.Instance.InventoryController.InventoryData.EquipmentSpells[index];
             if (item != null && item.ItemProfile != null)
             {
                 _animator.SetTrigger("Fire");

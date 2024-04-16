@@ -94,15 +94,18 @@
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\UIDemoController.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\EmptyWindowController.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Helpers\DefineSignals.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\JsonSavingController.cs" />
     <Compile Include="Assets\InventoryAsset\Tests\TestScripts\Test.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\SoundFXManager.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\NavigationPanelButton.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowPriority.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\PlaySoundFXOnCollision.cs" />
     <Compile Include="Assets\SFInventory\Scripts\InventoryFill.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryItem\InventoryItemScript\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\SFInventory\Scripts\TestItemsAdder.cs" />
-    <Compile Include="Assets\Barking_Dog\Common Scripts\Turn_Move.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelUILayer.cs" />
+    <Compile Include="Assets\_ShootingGame\VFX\Play_UNI_VFX.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryItem\InventoryItemScript\AddItem.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Helpers\PlayVFXOnCollision.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
@@ -116,6 +119,7 @@
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyIdle.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Inventory\UIItemDetail.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Helpers\BaseSingleton.cs" />
+    <Compile Include="Assets\_ShootingGame\VFX\ProjectileEffectController.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\PanelPriority.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
@@ -130,7 +134,9 @@
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryItem\InventoryItemScript\DragItem.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Projectile.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenTransitions\ScaleScreenTransition.cs" />
+    <Compile Include="Assets\UNI VFX\Common\Scripts\UNI_SimpleCameraController.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\CameraProjectionWindowController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\FireBall.cs" />
     <Compile Include="Assets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\InventoryScripts\InventoryInitializer.cs" />
@@ -148,10 +154,12 @@
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Window\WindowHistoryEntry.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\AimingThirdPerson.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\ConfirmationPopupController.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\TriggerProtalLoadScene.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\SaveSystem\InventorySaveSystem.cs" />
     <Compile Include="Assets\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\Panel\APanelController.cs" />
+    <Compile Include="Assets\UNI VFX\Common\Scripts\VFX_UNI_Rotate.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Inventory\InventoryController.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\ScreenControllers\PopupExampleWindowController.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFrameworkExamples\Scripts\Widgets\LevelProgressComponent.cs" />
@@ -164,15 +172,17 @@
     <Compile Include="Assets\_ShootingGame\Scripts\Inventory\ItemInventory.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\UIFramework\UIFrame.cs" />
     <Compile Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
-    <Compile Include="Assets\Barking_Dog\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Inventory\UIInventoryItem.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\UIController\UILobby.cs" />
     <Compile Include="Assets\InventoryAsset\Inventory\SaveSystem\InventoryData.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\Inventory\ItemPickUpAble.cs" />
     <Compile Include="Assets\_ShootingGame\Scripts\StateBehaviour\EnemyChasingState.cs" />
-    <Compile Include="Assets\UNI VFX\Common\Scripts\VFX_UNI_Rotate.cs" />
-    <Compile Include="Assets\UNI VFX\Common\Scripts\UNI_SimpleCameraController.cs" />
-    <Compile Include="Assets\_ShootingGame\VFX\Play_UNI_VFX.cs" />
+    <Compile Include="Assets\_Barking_Dog\Common Scripts\Turn_Move.cs" />
+    <Compile Include="Assets\_Barking_Dog\Common Scripts\MouseLook.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\EffectManager.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\UIController\UIPopUpMessage.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\Helpers\DefineString.cs" />
+    <Compile Include="Assets\_ShootingGame\Scripts\UIController\UILoading.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -188,6 +198,7 @@
     <None Include="Assets\uiframework_examples-master\Assets\External\Demigiant\DOTween\DOTween.XML" />
     <None Include="Assets\uiframework_examples-master\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\LightModenMap\_Docs\Doc.txt" />
     <None Include="Assets\InventoryAsset\README.txt" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
@@ -221,10 +232,11 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Sci-Fi Styled Modular Pack\Readme.txt" />
     <None Include="Assets\uiframework_examples-master\Assets\External\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Fire\Procedural fire\Demo scene\Readme.txt" />
-    <None Include="Assets\Barking_Dog\Readme_Please.txt" />
+    <None Include="Assets\_Barking_Dog\Readme_Please.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>

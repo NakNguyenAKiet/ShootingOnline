@@ -1,0 +1,372 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.25f1 (68ef2c4f8861) revision 6876972'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32509 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+D:/ProjectGame/ShootingOnline/ShootingOnline
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+50190
+Successfully changed project path to: D:/ProjectGame/ShootingOnline/ShootingOnline
+D:/ProjectGame/ShootingOnline/ShootingOnline
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [25724] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 25051236 [EditorId] 25051236 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [25724] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 25051236 [EditorId] 25051236 [Version] 1048832 [Id] WindowsEditor(7,NAK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 111.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/ProjectGame/ShootingOnline/ShootingOnline/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12129 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005011 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 189 ms
+Refreshing native plugins compatible for Editor in 65.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.789 seconds
+Domain Reload Profiling:
+	ReloadAssembly (789ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (601ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (112ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (425ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (264ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (66ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003712 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 68.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path D:\ProjectGame\ShootingOnline\ShootingOnline\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <a40b0ad4a868437393ad434631fb6ff1>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <a40b0ad4a868437393ad434631fb6ff1>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <a40b0ad4a868437393ad434631fb6ff1>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <a40b0ad4a868437393ad434631fb6ff1>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <a40b0ad4a868437393ad434631fb6ff1>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <5092d70d16a64dd9a555dd50f38aead0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.043 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1044ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (892ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (219ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (504ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (69ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5796 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 92 unused Assets / (3.0 MB). Loaded Objects now: 6257.
+Memory consumption went from 267.9 MB to 264.9 MB.
+Total: 8.947200 ms (FindLiveObjects: 0.812700 ms CreateObjectMapping: 0.241200 ms MarkObjects: 7.217600 ms  DeleteObjects: 0.674400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 29972.535598 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow_right.png
+  artifactKey: Guid(e05004e4bcd8b3e49bb0cbaab0215760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows/arrow_right.png using Guid(e05004e4bcd8b3e49bb0cbaab0215760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67f86cde0b0e4bef20ba8a75c1690c11') in 0.091532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.025810 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar1.png
+  artifactKey: Guid(fd496259f55fb1f4f89429cd523c1af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/background_bar1.png using Guid(fd496259f55fb1f4f89429cd523c1af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eabd57fb4d538f868d15b5317f470e6') in 0.019702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.241489 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_purple.png
+  artifactKey: Guid(1ceb59d66cd59eb40a2da04ee9509bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_purple.png using Guid(1ceb59d66cd59eb40a2da04ee9509bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1989f0348ec4c7e379c1822efb16ec0') in 0.016366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.015227 seconds.
+  path: Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_purple1.png
+  artifactKey: Guid(17e47abe8c135d64fb588e3425605def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/bars/bar_purple1.png using Guid(17e47abe8c135d64fb588e3425605def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26cdf9cf23e7277d6a20005e2f149249') in 0.012989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.365094 seconds.
+  path: Assets/InventoryAsset/Scenes/ExtraScene/InventoryExtraScene/Hats/HatSprites/BlackHat.psd
+  artifactKey: Guid(1f824f6d6392b4c4ea95b1b9d365c3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Scenes/ExtraScene/InventoryExtraScene/Hats/HatSprites/BlackHat.psd using Guid(1f824f6d6392b4c4ea95b1b9d365c3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d34a9d19b63eb3e16416eb6221f5f3') in 0.033094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.585996 seconds.
+  path: Assets/InventoryAsset/Icons/496_RPG_icons/C_Elm01.png
+  artifactKey: Guid(e99551f9ba1f7cf43a55373fe9e4486b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Icons/496_RPG_icons/C_Elm01.png using Guid(e99551f9ba1f7cf43a55373fe9e4486b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34fd5d4c43d7b8eca01d82dcb32e4c2f') in 0.026431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.350321 seconds.
+  path: Assets/InventoryAsset/Scenes/ExtraScene/InventoryExtraScene/TileSet/Object/Crate.png
+  artifactKey: Guid(1552e8069db87344d861b5501624794d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Scenes/ExtraScene/InventoryExtraScene/TileSet/Object/Crate.png using Guid(1552e8069db87344d861b5501624794d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db900b342093c51d5956136f38a02335') in 0.032375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/InventoryAsset/Scenes/ExtraScene/InventoryExtraScene/Player/PlayerSprites/Dead__002.png
+  artifactKey: Guid(cb11093e2c80f8b47be4161eddf3238a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Scenes/ExtraScene/InventoryExtraScene/Player/PlayerSprites/Dead__002.png using Guid(cb11093e2c80f8b47be4161eddf3238a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c445007c9b05c3a103a4844d73471b5') in 0.041907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.054152 seconds.
+  path: Assets/InventoryAsset/Scenes/ExtraScene/InventoryExtraScene/Player/PlayerSprites/Dead__003.png
+  artifactKey: Guid(0c5dbb0ca6f5e3a41b146bd4ba24f644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Scenes/ExtraScene/InventoryExtraScene/Player/PlayerSprites/Dead__003.png using Guid(0c5dbb0ca6f5e3a41b146bd4ba24f644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef19d628ace2d40ac2e804493a000994') in 0.049377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SFInventory/Icons/dice.png
+  artifactKey: Guid(ca87a74672991064c875332fa68e2c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFInventory/Icons/dice.png using Guid(ca87a74672991064c875332fa68e2c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332eb149cea9506685708e39fbe6663d') in 0.065258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.252560 seconds.
+  path: Assets/InventoryAsset/Icons/496_RPG_icons/E_Bones02.png
+  artifactKey: Guid(5a35f96fb1dce6e498ee604ae3c49dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Icons/496_RPG_icons/E_Bones02.png using Guid(5a35f96fb1dce6e498ee604ae3c49dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd879e736f8301203a96d8bed633032fe') in 0.018426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/InventoryAsset/Icons/496_RPG_icons/E_Metal04.png
+  artifactKey: Guid(b1ecc1a38f4bda546b54ba2f81eebda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Icons/496_RPG_icons/E_Metal04.png using Guid(b1ecc1a38f4bda546b54ba2f81eebda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed11d0c6887b9007ad2fb27be8746b5') in 0.019710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.033859 seconds.
+  path: Assets/InventoryAsset/Icons/496_RPG_icons/E_Metal05.png
+  artifactKey: Guid(4717ee1e86319824ab2ac9c9fda48f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Icons/496_RPG_icons/E_Metal05.png using Guid(4717ee1e86319824ab2ac9c9fda48f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d2cccac8ab8bf75b4ba545ceb64bf8') in 0.016906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Axe_1.png
+  artifactKey: Guid(60be931574a9c17468f13cdfa68e39ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Axe_1.png using Guid(60be931574a9c17468f13cdfa68e39ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f891e9e5eb395236b857af6b6bc18b84') in 0.046951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SFInventory/Icons/egg.png
+  artifactKey: Guid(7241bdaf79f1cdf499a61207cca30b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFInventory/Icons/egg.png using Guid(7241bdaf79f1cdf499a61207cca30b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46825761696927c15626295a89847c7d') in 0.027795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.239177 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Buff_3.png
+  artifactKey: Guid(5fe2f3254bfaf094eb738108e7eedb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Buff_3.png using Guid(5fe2f3254bfaf094eb738108e7eedb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac2bb808cb421082a69bfed6e6a0f3d') in 0.033536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_2.png
+  artifactKey: Guid(8013ced2516877c43b1e60720f52748f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_2.png using Guid(8013ced2516877c43b1e60720f52748f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd2641b815cb579e8affc9c240e1432') in 0.032063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_1.png
+  artifactKey: Guid(2630aaca550cda44986260cb35cf1387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_1.png using Guid(2630aaca550cda44986260cb35cf1387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7b0d8c9c23f019d82e94a642eb35ff') in 0.036863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Cold_5.png
+  artifactKey: Guid(bd5565336885f3446975c585f1b70ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Cold_5.png using Guid(bd5565336885f3446975c585f1b70ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964a607b443bdd07b6d028aaf5e2ca7a') in 0.036321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_4.png
+  artifactKey: Guid(4c0827473773009449cf0ef7d0a228f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_4.png using Guid(4c0827473773009449cf0ef7d0a228f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094547c3fd954383a2797277b4cd6f5b') in 0.035593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.259641 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_2.png
+  artifactKey: Guid(c6ae35aa675f33d4eb9c57987f1f96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_2.png using Guid(c6ae35aa675f33d4eb9c57987f1f96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2655466660b5d185531442652beb28a5') in 0.034327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Hammer_3.png
+  artifactKey: Guid(3f821292dcbd5ac4c841232909f66db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Hammer_3.png using Guid(3f821292dcbd5ac4c841232909f66db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b581c7e9af54e5aa1462c1ffd8e1576e') in 0.032449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_1.png
+  artifactKey: Guid(ad07527a07f828544b6f6a2a7f00e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_1.png using Guid(ad07527a07f828544b6f6a2a7f00e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b2f1449f62112d4ba2cce018dd3535') in 0.031979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.010156 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_5.png
+  artifactKey: Guid(3d4455fbc99f65b49a27cf9a63eaa3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_5.png using Guid(3d4455fbc99f65b49a27cf9a63eaa3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503123e0d10bab3a8ab53194a427531a') in 0.039362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.211604 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_2.png
+  artifactKey: Guid(a581d54f3d56c32479128f6a75060809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_2.png using Guid(a581d54f3d56c32479128f6a75060809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6dc12f800bee063646731bc498b167f') in 0.027828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/uiframework_examples-master/Assets/UIFrameworkExamples/Art/home.png
+  artifactKey: Guid(1e0aafccc644fcc40a0ff98e641cf4ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/uiframework_examples-master/Assets/UIFrameworkExamples/Art/home.png using Guid(1e0aafccc644fcc40a0ff98e641cf4ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87c678b1a068c532e3dfae4c91c48fa') in 0.019242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Water_5.png
+  artifactKey: Guid(a96f5f25e6b399d4ea75828a29498b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Water_5.png using Guid(a96f5f25e6b399d4ea75828a29498b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fe01593716408949ecb43bb72e1fd3') in 0.026786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/InventoryAsset/Icons/496_RPG_icons/I_BatWing.png
+  artifactKey: Guid(3314bce9bb1015e4185b378b7bfcbfb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryAsset/Icons/496_RPG_icons/I_BatWing.png using Guid(3314bce9bb1015e4185b378b7bfcbfb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f1b6954d269e5450f82a48f734215d') in 0.016438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_2.png
+  artifactKey: Guid(45a544502f29c1d4e91d8150cfa1d9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_2.png using Guid(45a544502f29c1d4e91d8150cfa1d9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6632a07e8247a2510d4b4f7d12b7e8e9') in 0.030570 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

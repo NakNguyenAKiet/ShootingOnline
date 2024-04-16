@@ -17,9 +17,11 @@ namespace StarterAssets
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
+        public float AimMoveSpeed;
 
         [Tooltip("Sprint speed of the character in m/s")]
         public float SprintSpeed = 5.335f;
+        public float AimSprintSpeed;
 
         [Tooltip("How fast the character turns to face movement direction")]
         [Range(0.0f, 0.3f)]
@@ -137,6 +139,9 @@ namespace StarterAssets
 
         private void Start()
         {
+            AimMoveSpeed = MoveSpeed * 0.4f;
+            AimSprintSpeed = MoveSpeed * 0.4f;
+
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
@@ -216,8 +221,16 @@ namespace StarterAssets
 
         private void Move()
         {
+            float targetSpeed;
+            if (_input.aim)
+            {
+                targetSpeed = _input.sprint ? AimSprintSpeed : AimMoveSpeed;
+            }
+            else
+            {
+                targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+            }
             // set target speed based on move speed, sprint speed and if sprint is pressed
-            float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
